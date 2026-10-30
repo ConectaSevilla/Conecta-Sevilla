@@ -1,0 +1,608 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: white;
+    color: #353535;
+}
+
+
+header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 180px;
+    height: auto;
+    display: block;
+}
+
+.logo-link {
+    text-decoration: none;
+}
+
+
+#nav_list {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #333333;
+    font-weight: 500;
+    font-size: 15px;
+    transition: color 0.3s;
+}
+
+.nav-item a:hover {
+    color: #599d93; 
+}
+
+
+.btn-principal {
+    background-color: #a11553; 
+    color: white;
+    padding: 10px 25px;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.btn-principal:hover {
+    background-color: #599d93;
+}
+
+#mobile_btn {
+    display: none; 
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #a11553;
+    cursor: pointer;
+}
+
+#mobile_menu {
+    display: none; 
+}
+
+@media screen and (max-width: 900px) {
+    #navbar {
+        padding: 15px 20px;
+    }
+
+    #navbar .btn-principal {
+        display: none;
+    }
+
+    #mobile_btn {
+        display: block;
+    }
+
+    #mobile_menu.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #fff;
+        padding-bottom: 20px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    #mobile_nav_list {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        list-style: none;
+        text-align: center;
+    }
+}
+
+.hero {
+    background-color: #dfd6be; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 0% 0px 5%;
+    min-height: 80vh;
+    gap: 20px;
+}
+
+.hero-content {
+    max-width: 550px;
+}
+
+.hero-content h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 100px;
+    color: #353535;
+    line-height: 1.1;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+.hero-content p {
+    font-size: 22px;
+    color: #353535;
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+.btn-hero {
+    background-color: #a11553; /* Vinho */
+    color: white;
+    padding: 20px 45px;
+    text-decoration: none;
+    font-size: 26px;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 50px;
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    transition: 0.3s;
+}
+
+.btn-hero:hover {
+    background-color: #599d93;
+    transform: scale(1.05);
+}
+
+.hero-image {
+    max-width: 50%;
+    display: flex;
+    justify-content: flex-end; 
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    max-height: 1000px;
+    object-fit: contain;
+        -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+}
+
+.areas {
+    padding: 80px 5%;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.areas h2 {
+    font-size: 36px;
+    color: #353535;
+    margin-bottom: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.grid-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background: #ffffff;
+    border: 1px solid #eaeaea;
+    border-radius: 15px;
+    padding: 40px 20px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(161, 21, 83, 0.15);
+}
+
+.icone-card {
+    font-size: 40px;
+    color: #599d93;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    font-size: 22px;
+    color: #a11553;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #666;
+    margin-bottom: 25px;
+    font-size: 15px;
+}
+
+.btn-card {
+    color: #599d93;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+@media screen and (max-width: 900px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 5%;
+    }
+    
+    .hero-content h1 { font-size: 55px; }
+    
+    .hero-image img { max-height: 400px; }
+}
+
+.pagina-header {
+    background-color: #dfd6be; 
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.pagina-header h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 60px;
+    color: #353535;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.pagina-header p {
+    font-size: 20px;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+.submenu-pagina {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    position: sticky; 
+    top: 80px; 
+    z-index: 100;
+}
+
+.submenu-pagina a {
+    text-decoration: none;
+    color: #a11553; 
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.submenu-pagina a:hover {
+    background-color: #faf7f2;
+}
+
+.bloco-conteudo {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 0 20px;
+    scroll-margin-top: 160px;
+}
+
+.bloco-conteudo h2 {
+    color: #a11553;
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.bloco-conteudo p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #353535;
+    margin-bottom: 20px;
+}
+
+.pagina-conteudo {
+    max-width: 1000px;
+    margin: 60px auto; 
+    padding: 0 20px;   
+}
+
+.card-link {
+    text-decoration: none; 
+    color: inherit;       
+    display: block;       
+}
+
+.card-link .card {
+    height: 100%;        
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center; 
+    align-items: center;
+}
+
+.btn-card {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 15px;
+    border: 2px solid #599d93;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.card-link:hover .btn-card {
+    background-color: #599d93;
+    color: white;
+}
+
+/* =========================================
+   ESTILOS DA PÁGINA DE PODCAST (EM BREVE)
+   ========================================= */
+.coming-soon {
+    text-align: center;
+    max-width: 800px;
+    margin: 80px auto;
+    padding: 40px 20px;
+    background-color: #faf7f2; /* Fundo bege clarinho */
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.icone-grande {
+    font-size: 80px;
+    color: #599d93; /* Verde */
+    margin-bottom: 30px;
+    animation: float 3s ease-in-out infinite; /* Efeito flutuante */
+}
+
+.coming-soon h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    color: #353535;
+    margin-bottom: 20px;
+}
+
+.coming-soon p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+/* Botões de Ação (YouTube e Instagram) */
+.botoes-acao {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.btn-youtube, .btn-instagram {
+    text-decoration: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: 0.3s;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-youtube {
+    background-color: #a11553; /* Vinho */
+    color: white;
+}
+
+.btn-youtube:hover {
+    background-color: #ff0000; /* Vermelho Youtube */
+    transform: scale(1.05);
+}
+
+.btn-instagram {
+    background-color: #fff;
+    color: #a11553;
+    border: 2px solid #a11553;
+}
+
+.btn-instagram:hover {
+    background-color: #a11553;
+    color: white;
+    transform: scale(1.05);
+}
+
+.aviso-redes {
+    color: #777 !important;
+    font-size: 14px !important;
+}
+
+/* Animação do microfone flutuando */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+/* =========================================
+   RESPONSIVIDADE (CELULAR E TABLET)
+   ========================================= */
+@media screen and (max-width: 900px) {
+    /* Esconde o menu grande e o botão principal no telemóvel */
+    #nav_list, 
+    #navbar .btn-principal {
+        display: none;
+    }
+
+    /* Mostra o botão de três tracinhos */
+    #mobile_btn {
+        display: block;
+    }
+
+    /* Ajusta o tamanho da navbar para caber a logo e o botão */
+    #navbar {
+        padding: 15px 20px;
+    }
+}
+
+/* =========================================
+   RESPONSIVIDADE (CELULAR E TABLET)
+   ========================================= */
+@media screen and (max-width: 900px) {
+    
+    /* --- 1. AJUSTES DO MENU MOBILE --- */
+    #nav_list, 
+    #navbar .btn-principal {
+        display: none;
+    }
+
+    #mobile_btn {
+        display: block;
+    }
+
+    #navbar {
+        padding: 15px 20px;
+    }
+
+    #mobile_menu.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #fff;
+        padding-bottom: 20px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    #mobile_nav_list {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        list-style: none;
+        text-align: center;
+    }
+    
+    #mobile_nav_list .nav-item a {
+        font-size: 18px;
+    }
+
+    /* --- 2. AJUSTES DO BANNER (HERO) NO CELULAR --- */
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 5%;
+        min-height: auto; 
+        gap: 30px;
+    }
+    
+    .hero-content {
+        max-width: 100%; 
+    }
+    
+    .hero-content h1 { 
+        font-size: 50px; 
+        line-height: 1.1;
+        margin-bottom: 15px;
+    }
+    
+    .hero-content p { 
+        font-size: 16px; 
+        line-height: 1.6;
+        margin-bottom: 25px;
+    }
+    
+    .btn-hero {
+        font-size: 18px; 
+        padding: 15px 30px;
+    }
+    
+    .hero-image img { 
+        max-height: 350px; 
+        margin-top: 20px;
+    }
+
+        /* --- 3. AJUSTES DO SUBMENU (SOBRE E SEGURANÇA) NO CELULAR --- */
+    .submenu-pagina {
+        justify-content: flex-start;
+        overflow-x: auto;
+        overflow-y: hidden;
+        flex-wrap: nowrap;
+        white-space: nowrap;
+        
+        /* Voltamos o padding ao normal, sem o espaço extra gigante embaixo */
+        padding: 15px 20px; 
+        
+        top: 70px; 
+        -webkit-overflow-scrolling: touch;
+        
+        scrollbar-width: thin; 
+        scrollbar-color: #a11553 #f4e9d9; 
+    }
+
+    /* AQUI ESTÁ O SEGREDO DOS BOTÕES BONITOS: */
+    .submenu-pagina a {
+        font-size: 15px; 
+        background-color: #faf7f2; /* Fundo bege clarinho */
+        border: 1px solid #dfd6be; /* Bordinha */
+        border-radius: 50px;       /* Bordas bem redondinhas (cápsula) */
+        padding: 8px 16px;         /* Espaçamento interno */
+        flex-shrink: 0;            /* Impede que o botão amasse */
+    }
+
+    /* A barra de rolagem continua fininha */
+    .submenu-pagina::-webkit-scrollbar {
+        display: block; 
+        height: 4px; /* Deixei ela ainda mais fininha */
+    }
+
+    .submenu-pagina::-webkit-scrollbar-track {
+        background: transparent; /* Deixa o fundo da barra invisível */
+    }
+
+    .submenu-pagina::-webkit-scrollbar-thumb {
+        background: #a11553; 
+        border-radius: 10px;
+    }
+
+    /* --- 4. AJUSTES DO CONTEÚDO E CARDS --- */
+    .pagina-header h1 {
+        font-size: 40px; /* Diminui o título das páginas internas */
+    }
+
+    .pagina-header p {
+        font-size: 16px;
+    }
+
+    .bloco-conteudo h2 {
+        font-size: 26px; /* Diminui os subtítulos no celular */
+    }
+
+    .bloco-conteudo p {
+        font-size: 16px;
+    }
+}

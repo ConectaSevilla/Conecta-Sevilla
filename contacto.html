@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Conecta Sevilla</title>
+    
+    <link rel="stylesheet" href="src/styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <nav id="navbar">
+            <a href="index.html" class="logo-link">
+                <img src="img/logo.png" alt="Conecta Sevilla" class="logo">
+            </a>
+
+            <ul id="nav_list">
+                <li class="nav-item"><a href="index.html">Inicio</a></li>
+                <li class="nav-item"><a href="sobre.html">Sobre el proyecto</a></li>
+                <li class="nav-item"><a href="quienes.html">Quienes Somos</a></li>
+                <li class="nav-item"><a href="podcast.html">Podcast y Noticias</a></li>
+                <li class="nav-item"><a href="tramites.html">Trámites</a></li>
+                <li class="nav-item"><a href="seguridad.html">Seguridad</a></li>
+            </ul>
+
+            <a href="contacto.html" class="btn-principal">Contacto</a>
+
+            <button id="mobile_btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li class="nav-item"><a href="index.html">Inicio</a></li>
+                <li class="nav-item"><a href="sobre.html">Sobre el proyecto</a></li>
+                <li class="nav-item"><a href="quienes.html">Quienes Somos</a></li>
+                <li class="nav-item"><a href="podcast.html">Podcast y Noticias</a></li>
+                <li class="nav-item"><a href="tramites.html">Trámites</a></li>
+                <li class="nav-item"><a href="seguridad.html">Seguridad</a></li>
+                <li class="nav-item"><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="pagina-header">
+        <h1>Contacto</h1>
+        <p>¿Tienes alguna duda, sugerencia o propuesta de colaboración? Nos encantaría escucharte.</p>
+    </section>
+
+    <section class="pagina-conteudo" style="max-width: 1000px;">
+        
+        <div class="grid-cards">
+            <a href="mailto:contato@conectasevilla.com" class="card-link">
+                <div class="card">
+                    <i class="fa-solid fa-envelope icone-card"></i>
+                    <h3>Correo Electrónico</h3>
+                    <p>¿Tienes alguna duda, sugerencia o propuesta de colaboración? Nos encantaría escucharte.</p>
+                    <p>Si necesitas información sobre nuestro proyecto, quieres compartir una experiencia o has encontrado algún contenido que deberíamos actualizar, puedes ponerte en contacto con nosotros a través del correo electrónico. Estamos aquí para seguir mejorando Conecta Sevilla para todos los estudiantes internacionales.</p>
+                    <p>¡Tu opinión también ayuda a construir nuestra comunidad!</p>
+                    <span class="btn-card">Enviar E-mail</span>
+                </div>
+            </a>
+
+            <!-- Card 2: Podcast (YouTube e Spotify) -->
+            <div class="card-wrapper">
+                <div class="card">
+                    <i class="fa-solid fa-microphone-lines icone-card"></i>
+                    <h3>Nuestro Podcast</h3>
+                    <p>¿Prefieres aprender escuchando o viendo?</p>
+                    <p>Encuentra nuestros episodios y entrevistas con estudiantes sobre su experiencia en Sevilla.</p>
+                    <p>Acompáñanos para conocer historias reales y consejos prácticos para aprovechar al máximo tu experiencia en la ciudad.</p>
+                    
+                    <!-- Botões lado a lado -->
+                    <div style="display: flex; gap: 10px; margin-top: auto; width: 100%; justify-content: center;">
+                        <a href="https://youtube.com" target="_blank" class="btn-card" style="flex: 1; text-align: center; margin-top: 0;">
+                            <i class="fa-brands fa-youtube"></i> YouTube
+                        </a>
+                        <a href="https://spotify.com" target="_blank" class="btn-card" style="flex: 1; text-align: center; margin-top: 0; border-color: #1DB954; color: #1DB954;">
+                            <i class="fa-brands fa-spotify"></i> Spotify
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="https://instagram.com" target="_blank" class="card-link">
+                <div class="card">
+                    <i class="fa-brands fa-instagram icone-card"></i>
+                    <h3>Redes Sociales</h3>
+                    <p>¡La experiencia de estudiar en otro país es mucho mejor cuando puedes compartirla!</p>
+                    <p>A través de nuestras redes sociales queremos crear una comunidad de estudiantes internacionales y locales donde compartir experiencias, resolver dudas, intercambiar recomendaciones y mantenerse informado.</p>
+                    <p>Publicaremos consejos útiles, novedades, información de interés y contenidos relacionados con la vida en Sevilla. Además, queremos que este espacio sea tuyo, donde podrás compartir tus experiencias, ayudar a otros estudiantes y conocer personas que están viviendo una aventura parecida a la tuya.</p>
+                    <p>¡Síguenos y forma parte de nuestra comunidad!</p>
+                    <span class="btn-card">Seguir en Instagram</span>
+                </div>
+            </a>
+        </div>
+
+    </section>
+     <script src="src/javascript/script.js"></script>
+</body>
+</html>
