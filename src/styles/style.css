@@ -361,24 +361,21 @@ header {
     color: white;
 }
 
-/* =========================================
-   ESTILOS DA PÁGINA DE PODCAST (EM BREVE)
-   ========================================= */
 .coming-soon {
     text-align: center;
     max-width: 800px;
     margin: 80px auto;
     padding: 40px 20px;
-    background-color: #faf7f2; /* Fundo bege clarinho */
+    background-color: #faf7f2;
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.05);
 }
 
 .icone-grande {
     font-size: 80px;
-    color: #599d93; /* Verde */
+    color: #599d93;
     margin-bottom: 30px;
-    animation: float 3s ease-in-out infinite; /* Efeito flutuante */
+    animation: float 3s ease-in-out infinite; 
 }
 
 .coming-soon h2 {
@@ -395,7 +392,6 @@ header {
     margin-bottom: 40px;
 }
 
-/* Botões de Ação (YouTube e Instagram) */
 .botoes-acao {
     display: flex;
     justify-content: center;
@@ -417,12 +413,12 @@ header {
 }
 
 .btn-youtube {
-    background-color: #a11553; /* Vinho */
+    background-color: #a11553; 
     color: white;
 }
 
 .btn-youtube:hover {
-    background-color: #ff0000; /* Vermelho Youtube */
+    background-color: #ff0000; 
     transform: scale(1.05);
 }
 
@@ -443,40 +439,31 @@ header {
     font-size: 14px !important;
 }
 
-/* Animação do microfone flutuando */
 @keyframes float {
     0% { transform: translateY(0px); }
     50% { transform: translateY(-10px); }
     100% { transform: translateY(0px); }
 }
 
-/* =========================================
-   RESPONSIVIDADE (CELULAR E TABLET)
-   ========================================= */
-@media screen and (max-width: 900px) {
-    /* Esconde o menu grande e o botão principal no telemóvel */
+@media screen and (max-width: 900px) 
+{
     #nav_list, 
     #navbar .btn-principal {
         display: none;
     }
 
-    /* Mostra o botão de três tracinhos */
     #mobile_btn {
         display: block;
     }
 
-    /* Ajusta o tamanho da navbar para caber a logo e o botão */
     #navbar {
         padding: 15px 20px;
     }
 }
 
-/* =========================================
-   RESPONSIVIDADE (CELULAR E TABLET)
-   ========================================= */
+
 @media screen and (max-width: 900px) {
     
-    /* --- 1. AJUSTES DO MENU MOBILE --- */
     #nav_list, 
     #navbar .btn-principal {
         display: none;
@@ -511,7 +498,6 @@ header {
         font-size: 18px;
     }
 
-    /* --- 2. AJUSTES DO BANNER (HERO) NO CELULAR --- */
     .hero {
         flex-direction: column;
         text-align: center;
@@ -546,7 +532,6 @@ header {
         margin-top: 20px;
     }
 
-        /* --- 3. AJUSTES DO SUBMENU (SOBRE E SEGURANÇA) NO CELULAR --- */
     .submenu-pagina {
         justify-content: flex-start;
         overflow-x: auto;
@@ -554,7 +539,6 @@ header {
         flex-wrap: nowrap;
         white-space: nowrap;
         
-        /* Voltamos o padding ao normal, sem o espaço extra gigante embaixo */
         padding: 15px 20px; 
         
         top: 70px; 
@@ -564,24 +548,23 @@ header {
         scrollbar-color: #a11553 #f4e9d9; 
     }
 
-    /* AQUI ESTÁ O SEGREDO DOS BOTÕES BONITOS: */
     .submenu-pagina a {
         font-size: 15px; 
-        background-color: #faf7f2; /* Fundo bege clarinho */
-        border: 1px solid #dfd6be; /* Bordinha */
-        border-radius: 50px;       /* Bordas bem redondinhas (cápsula) */
-        padding: 8px 16px;         /* Espaçamento interno */
-        flex-shrink: 0;            /* Impede que o botão amasse */
+        background-color: #faf7f2; 
+        border: 1px solid #dfd6be; 
+        border-radius: 50px;       
+        padding: 8px 16px;        
+        flex-shrink: 0;           
     }
 
-    /* A barra de rolagem continua fininha */
+
     .submenu-pagina::-webkit-scrollbar {
         display: block; 
-        height: 4px; /* Deixei ela ainda mais fininha */
+        height: 4px;
     }
 
     .submenu-pagina::-webkit-scrollbar-track {
-        background: transparent; /* Deixa o fundo da barra invisível */
+        background: transparent;
     }
 
     .submenu-pagina::-webkit-scrollbar-thumb {
@@ -589,9 +572,8 @@ header {
         border-radius: 10px;
     }
 
-    /* --- 4. AJUSTES DO CONTEÚDO E CARDS --- */
     .pagina-header h1 {
-        font-size: 40px; /* Diminui o título das páginas internas */
+        font-size: 40px; 
     }
 
     .pagina-header p {
@@ -599,7 +581,7 @@ header {
     }
 
     .bloco-conteudo h2 {
-        font-size: 26px; /* Diminui os subtítulos no celular */
+        font-size: 26px; 
     }
 
     .bloco-conteudo p {
