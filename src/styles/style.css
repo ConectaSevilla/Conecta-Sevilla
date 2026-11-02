@@ -588,3 +588,15 @@ header {
         font-size: 16px;
     }
 }
+
+.card-wrapper .btn-card:first-child:hover {
+    background-color: #ff0000; 
+    color: white !important;   
+    border-color: #ff0000;
+}
+
+.card-wrapper .btn-card:last-child:hover {
+    background-color: #1DB954;
+    color: white !important;  
+    border-color: #1DB954;
+}
