@@ -12,7 +12,7 @@ en: {
     "nav.tramites": "Procedures",
     "nav.seguridad": "Safety",
     "nav.contacto": "Contact",
-    "nav.voltar": "Back to Home",
+    "nav.voltar": "Back",
 
     // ===== INDEX =====
     "home.titulo": "Welcome to Seville",
@@ -200,7 +200,7 @@ es: {
     "nav.tramites": "Trámites",
     "nav.seguridad": "Seguridad",
     "nav.contacto": "Contacto",
-    "nav.voltar": "Volver al Inicio",
+    "nav.voltar": "Volver",
 
     "home.titulo": "Bienvenidos a Sevilla",
     "home.desc": "Tu guía práctica y segura para la vida de estudiante internacional en Sevilla. Encuentra información sobre trámites, consejos y comunidad.",
@@ -377,7 +377,7 @@ pt: {
     "nav.tramites": "Trâmites",
     "nav.seguridad": "Segurança",
     "nav.contacto": "Contato",
-    "nav.voltar": "Voltar ao Início",
+    "nav.voltar": "Voltar",
 
     "home.titulo": "Bem-vindos a Sevilla",
     "home.desc": "Seu guia prático e seguro para a vida de estudante internacional em Sevilla. Encontre informações sobre trâmites, dicas e comunidade.",
