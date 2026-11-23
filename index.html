@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,41 +13,35 @@
             <a href="index.html" class="logo-link">
                 <img src="img/logo.png" alt="Conecta Sevilla" class="logo">
             </a>
-
             <ul id="nav_list">
-                <li class="nav-item"><a href="index.html">Inicio</a></li>
-                <li class="nav-item"><a href="sobre.html">Sobre el proyecto</a>
-                <li class="nav-item"><a href="quienes.html">Quienes Somos</a></li>
-                <li class="nav-item"><a href="podcast.html">Podcast y Noticias</a></li>
-                <li class="nav-item"><a href="tramites.html">Trámites</a></li>
-                <li class="nav-item"><a href="seguridad.html">Seguridad</a></li>
+                <li class="nav-item"><a href="index.html" class="active" data-i18n="nav.inicio">Inicio</a></li>
+                <li class="nav-item"><a href="podcast.html" data-i18n="nav.podcast">Noticias</a></li>
+                <li class="nav-item"><a href="tramites.html" data-i18n="nav.tramites">Trámites</a></li>
+                <li class="nav-item"><a href="seguridad.html" data-i18n="nav.seguridad">Seguridad</a></li>
+                <li class="nav-item"><a href="sobre.html" data-i18n="nav.sobre">Sobre el proyecto</a></li>
+                <li class="nav-item"><a href="quienes.html" data-i18n="nav.quem">Quienes Somos</a></li>
             </ul>
-
-            <a href="contacto.html" class="btn-principal">Contacto</a>
-
-            <button id="mobile_btn">
-                <i class="fa-solid fa-bars"></i>
-            </button>
+            <a href="contacto.html" class="btn-principal" data-i18n="nav.contacto">Contacto</a>
+            <button id="mobile_btn"><i class="fa-solid fa-bars"></i></button>
         </nav>
-
         <div id="mobile_menu">
             <ul id="mobile_nav_list">
-                <li class="nav-item"><a href="index.html">Inicio</a></li>
-                <li class="nav-item"><a href="sobre.html">Sobre el proyecto</a></li>
-                <li class="nav-item"><a href="quienes.html">Quienes Somos</a></li>
-                <li class="nav-item"><a href="podcast.html">Podcast y Noticias</a></li>
-                <li class="nav-item"><a href="tramites.html">Trámites</a></li>
-                <li class="nav-item"><a href="seguridad.html">Seguridad</a></li>
-                <li class="nav-item"><a href="contacto.html">Contacto</a></li>
+                <li class="nav-item"><a href="index.html" data-i18n="nav.inicio">Inicio</a></li>
+                <li class="nav-item"><a href="podcast.html" data-i18n="nav.podcast">Noticias</a></li>
+                <li class="nav-item"><a href="tramites.html" data-i18n="nav.tramites">Trámites</a></li>
+                <li class="nav-item"><a href="seguridad.html" data-i18n="nav.seguridad">Seguridad</a></li>
+                <li class="nav-item"><a href="sobre.html" data-i18n="nav.sobre">Sobre el proyecto</a></li>
+                <li class="nav-item"><a href="quienes.html" data-i18n="nav.quem">Quienes Somos</a></li>
+                <li class="nav-item"><a href="contacto.html" data-i18n="nav.contacto">Contacto</a></li>
             </ul>
         </div>
     </header>
 
-<section id="home" class="hero">
+    <section id="home" class="hero">
         <div class="hero-content">
-            <h1>Bienvenidos a Sevilla</h1>
-            <p>Tu guía práctica y segura para la vida de estudiante internacional en Sevilla. Encuentra información sobre trámites, consejos y comunidad.</p>
-            <a href="#areas" class="btn-hero">Explora la guía <i class="fa-solid fa-arrow-right"></i></a>
+            <h1 data-i18n="home.titulo">Bienvenidos a Sevilla</h1>
+            <p data-i18n="home.desc">Tu guía práctica y segura para la vida de estudiante internacional en Sevilla. Encuentra información sobre trámites, consejos y comunidad.</p>
+            <a href="#areas" class="btn-hero" data-i18n="home.btn">Explora la guía <i class="fa-solid fa-arrow-right"></i></a>
         </div>
         <div class="hero-image">
             <img src="img/imagem-sevilla.png" alt="Sevilla">
@@ -55,39 +49,39 @@
     </section>
 
     <section id="areas" class="areas">
-        <h2>¿Qué necesitas hoy?</h2>
-        
+        <h2 data-i18n="home.areas">¿Qué necesitas hoy?</h2>
         <div class="grid-cards">
-        
             <div class="card">
                 <i class="fa-solid fa-file-signature icone-card"></i>
-                <h3>Trámites</h3>
-                <p>Visados, NIE, TIE, empadronamiento y matrículas.</p>
-                <a href="tramites.html" class="btn-card">Acceder</a>
+                <h3 data-i18n="home.tramites">Trámites</h3>
+                <p data-i18n="home.tramites.desc">Visados, NIE, TIE, empadronamiento y matrículas.</p>
+                <a href="tramites.html" class="btn-card" data-i18n="home.acceder">Acceder</a>
             </div>
-            
             <div class="card">
                 <i class="fa-solid fa-shield-halved icone-card"></i>
-                <h3>Seguridad</h3>
-                <p>Contactos de emergencia, riesgos y estafas comunes.</p>
-                <a href="seguridad.html" class="btn-card">Acceder</a>
+                <h3 data-i18n="home.seguridad">Seguridad</h3>
+                <p data-i18n="home.seguridad.desc">Contactos de emergencia, riesgos y estafas comunes.</p>
+                <a href="seguridad.html" class="btn-card" data-i18n="home.acceder">Acceder</a>
             </div>
-            
             <div class="card">
                 <i class="fa-solid fa-users icone-card"></i>
-                <h3>Comunidad</h3>
-                <p>Conecta con otros estudiantes y comparte experiencias.</p>
-                <a href="contacto.html" class="btn-card">Acceder</a>
+                <h3 data-i18n="home.comunidad">Comunidad</h3>
+                <p data-i18n="home.comunidad.desc">Conecta con otros estudiantes y comparte experiencias.</p>
+                <a href="contacto.html" class="btn-card" data-i18n="home.acceder">Acceder</a>
             </div>
-            
             <div class="card">
                 <i class="fa-solid fa-microphone icone-card"></i>
-                <h3>Podcast y Noticias</h3>
-                <p>Novedades, consejos y entrevistas para tu día a día.</p>
-                <a href="podcast.html" class="btn-card">Acceder</a>
+                <h3 data-i18n="home.podcast">Podcast y Noticias</h3>
+                <p data-i18n="home.podcast.desc">Novedades, consejos y entrevistas para tu día a día.</p>
+                <a href="podcast.html" class="btn-card" data-i18n="home.acceder">Acceder</a>
             </div>
         </div>
     </section>
+
+    <script src="src/javascript/traducoes.js"></script>
+    <script src="src/javascript/script.js"></script>
+</body>
+</html>
     <script src="src/javascript/script.js"></script>
 </body>
 </html>
