@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 
-
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +11,6 @@ body {
     background-color: white;
     color: #353535;
 }
-
 
 header {
     background-color: #ffffff;
@@ -41,7 +39,6 @@ header {
     text-decoration: none;
 }
 
-
 #nav_list {
     list-style: none;
     display: flex;
@@ -59,7 +56,6 @@ header {
 .nav-item a:hover {
     color: #599d93; 
 }
-
 
 .btn-principal {
     background-color: #a11553; 
@@ -83,41 +79,12 @@ header {
     font-size: 24px;
     color: #a11553;
     cursor: pointer;
+    z-index: 10000; /* Garante que fica clicável */
+    position: relative;
 }
 
 #mobile_menu {
     display: none; 
-}
-
-@media screen and (max-width: 900px) {
-    #navbar {
-        padding: 15px 20px;
-    }
-
-    #navbar .btn-principal {
-        display: none;
-    }
-
-    #mobile_btn {
-        display: block;
-    }
-
-    #mobile_menu.active {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: #fff;
-        padding-bottom: 20px;
-        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    }
-
-    #mobile_nav_list {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        list-style: none;
-        text-align: center;
-    }
 }
 
 .hero {
@@ -151,7 +118,7 @@ header {
 }
 
 .btn-hero {
-    background-color: #a11553; /* Vinho */
+    background-color: #a11553;
     color: white;
     padding: 20px 45px;
     text-decoration: none;
@@ -180,7 +147,7 @@ header {
     height: auto;
     max-height: 1000px;
     object-fit: contain;
-        -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
     mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
 }
 
@@ -244,18 +211,18 @@ header {
     font-weight: 700;
     text-transform: uppercase;
     font-size: 13px;
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 15px;
+    border: 2px solid #599d93;
+    border-radius: 50px;
+    transition: 0.3s;
 }
 
-@media screen and (max-width: 900px) {
-    .hero {
-        flex-direction: column;
-        text-align: center;
-        padding: 40px 5%;
-    }
-    
-    .hero-content h1 { font-size: 55px; }
-    
-    .hero-image img { max-height: 400px; }
+.card-link:hover .btn-card,
+.btn-card:hover {
+    background-color: #599d93;
+    color: white;
 }
 
 .pagina-header {
@@ -278,7 +245,6 @@ header {
     max-width: 800px;
     margin: 0 auto;
 }
-
 
 .submenu-pagina {
     display: flex;
@@ -345,20 +311,6 @@ header {
     justify-content: space-between;
     text-align: center; 
     align-items: center;
-}
-
-.btn-card {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 8px 15px;
-    border: 2px solid #599d93;
-    border-radius: 50px;
-    transition: 0.3s;
-}
-
-.card-link:hover .btn-card {
-    background-color: #599d93;
-    color: white;
 }
 
 .coming-soon {
@@ -445,161 +397,9 @@ header {
     100% { transform: translateY(0px); }
 }
 
-@media screen and (max-width: 900px) 
-{
-    #nav_list, 
-    #navbar .btn-principal {
-        display: none;
-    }
-
-    #mobile_btn {
-        display: block;
-    }
-
-    #navbar {
-        padding: 15px 20px;
-    }
-}
-
-
-@media screen and (max-width: 900px) {
-    
-    #nav_list, 
-    #navbar .btn-principal {
-        display: none;
-    }
-
-    #mobile_btn {
-        display: block;
-    }
-
-    #navbar {
-        padding: 15px 20px;
-    }
-
-    #mobile_menu.active {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: #fff;
-        padding-bottom: 20px;
-        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    }
-
-    #mobile_nav_list {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        list-style: none;
-        text-align: center;
-    }
-    
-    #mobile_nav_list .nav-item a {
-        font-size: 18px;
-    }
-
-    .hero {
-        flex-direction: column;
-        text-align: center;
-        padding: 40px 5%;
-        min-height: auto; 
-        gap: 30px;
-    }
-    
-    .hero-content {
-        max-width: 100%; 
-    }
-    
-    .hero-content h1 { 
-        font-size: 50px; 
-        line-height: 1.1;
-        margin-bottom: 15px;
-    }
-    
-    .hero-content p { 
-        font-size: 16px; 
-        line-height: 1.6;
-        margin-bottom: 25px;
-    }
-    
-    .btn-hero {
-        font-size: 18px; 
-        padding: 15px 30px;
-    }
-    
-    .hero-image img { 
-        max-height: 350px; 
-        margin-top: 20px;
-    }
-
-    .submenu-pagina {
-        justify-content: flex-start;
-        overflow-x: auto;
-        overflow-y: hidden;
-        flex-wrap: nowrap;
-        white-space: nowrap;
-        
-        padding: 15px 20px; 
-        
-        top: 70px; 
-        -webkit-overflow-scrolling: touch;
-        
-        scrollbar-width: thin; 
-        scrollbar-color: #a11553 #f4e9d9; 
-    }
-
-    .submenu-pagina a {
-        font-size: 15px; 
-        background-color: #faf7f2; 
-        border: 1px solid #dfd6be; 
-        border-radius: 50px;       
-        padding: 8px 16px;        
-        flex-shrink: 0;           
-    }
-
-
-    .submenu-pagina::-webkit-scrollbar {
-        display: block; 
-        height: 4px;
-    }
-
-    .submenu-pagina::-webkit-scrollbar-track {
-        background: transparent;
-    }
-
-    .submenu-pagina::-webkit-scrollbar-thumb {
-        background: #a11553; 
-        border-radius: 10px;
-    }
-
-    .pagina-header h1 {
-        font-size: 40px; 
-    }
-
-    .pagina-header p {
-        font-size: 16px;
-    }
-
-    .bloco-conteudo h2 {
-        font-size: 26px; 
-    }
-
-    .bloco-conteudo p {
-        font-size: 16px;
-    }
-}
-
-.card-wrapper .btn-card:first-child:hover {
-    background-color: #ff0000; 
-    color: white !important;   
-    border-color: #ff0000;
-}
-
-.card-wrapper .btn-card:last-child:hover {
-    background-color: #1DB954;
-    color: white !important;  
-    border-color: #1DB954;
-}
+/* ============================================================
+   BOTÃO VOLTAR AO INÍCIO
+   ============================================================ */
 #btn-topo {
     position: fixed;
     bottom: 30px;
@@ -634,54 +434,6 @@ header {
     transform: translateY(-3px) scale(1.05);
 }
 
-@media screen and (max-width: 900px) {
-    #btn-topo {
-        bottom: 20px;
-        right: 20px;
-        width: 48px;
-        height: 48px;
-        font-size: 18px;
-    }
-}
-/* ===== SELETOR DE IDIOMA ===== */
-#seletor-idioma {
-    display: flex;
-    gap: 4px;
-    background: #faf7f2;
-    border-radius: 20px;
-    padding: 4px;
-    margin-right: 15px;
-}
-
-.lang-btn {
-    background: transparent;
-    border: none;
-    padding: 6px 12px;
-    border-radius: 16px;
-    font-size: 12px;
-    font-weight: 700;
-    color: #a11553;
-    cursor: pointer;
-    transition: 0.3s;
-    font-family: 'Poppins', sans-serif;
-}
-
-.lang-btn:hover {
-    background: rgba(161, 21, 83, 0.1);
-}
-
-.lang-btn.ativo {
-    background: #a11553;
-    color: white;
-}
-
-/* No mobile, esconde o seletor no navbar e mostra no menu mobile */
-@media screen and (max-width: 900px) {
-    #seletor-idioma {
-        margin-right: 0;
-        margin-top: 10px;
-    }
-}
 /* ============================================================
    SELETOR DE IDIOMA — DESKTOP
    ============================================================ */
@@ -726,52 +478,55 @@ header {
 }
 
 /* ============================================================
-   BOTÃO VOLTAR AO INÍCIO
-   ============================================================ */
-#btn-topo {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    width: 55px;
-    height: 55px;
-    border-radius: 50%;
-    background-color: #a11553;
-    color: white;
-    border: none;
-    font-size: 20px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 4px 15px rgba(161, 21, 83, 0.4);
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(20px);
-    transition: all 0.3s ease;
-    z-index: 999;
-}
-
-#btn-topo.visivel {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-}
-
-#btn-topo:hover {
-    background-color: #599d93;
-    transform: translateY(-3px) scale(1.05);
-}
-
-/* ============================================================
-   SELETOR DE IDIOMA — MOBILE
+   RESPONSIVIDADE (MOBILE)
    ============================================================ */
 @media screen and (max-width: 900px) {
-    /* Esconde o seletor do header */
-    #seletor-idioma {
-        display: none !important;
+    
+    /* Menu Navbar */
+    #navbar {
+        padding: 15px 20px;
     }
 
-    /* Item que segura o seletor no menu mobile */
+    #nav_list, 
+    #navbar .btn-principal {
+        display: none; /* Esconde links e botão no topo */
+    }
+
+    #mobile_btn {
+        display: block; /* Mostra o hamburguer */
+    }
+
+    /* Menu Aberto */
+    #mobile_menu.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #fff;
+        padding-bottom: 20px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    #mobile_nav_list {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        list-style: none;
+        text-align: center;
+        width: 100%;
+    }
+    
+    #mobile_nav_list .nav-item a {
+        font-size: 18px;
+        display: block;
+        padding: 10px;
+    }
+
+    /* Esconde o seletor do topo no mobile (para não empurrar o hamburguer) */
+    #seletor-idioma {
+        display: none !important; 
+    }
+
+    /* Configura o seletor DENTRO do menu hamburguer */
     .lang-mobile-item {
         margin-top: 15px;
         padding-top: 15px;
@@ -779,6 +534,8 @@ header {
         width: 80%;
         display: flex;
         justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .seletor-mobile {
@@ -792,7 +549,96 @@ header {
         border-radius: 20px;
     }
 
-    /* Botão voltar ao topo fica menor */
+    /* Hero Section */
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 5%;
+        min-height: auto; 
+        gap: 30px;
+    }
+    
+    .hero-content {
+        max-width: 100%; 
+    }
+    
+    .hero-content h1 { 
+        font-size: 50px; 
+        line-height: 1.1;
+        margin-bottom: 15px;
+    }
+    
+    .hero-content p { 
+        font-size: 16px; 
+        line-height: 1.6;
+        margin-bottom: 25px;
+    }
+    
+    .btn-hero {
+        font-size: 18px; 
+        padding: 15px 30px;
+    }
+    
+    .hero-image img { 
+        max-height: 350px; 
+        margin-top: 20px;
+    }
+
+    /* Submenu */
+    .submenu-pagina {
+        justify-content: flex-start;
+        overflow-x: auto;
+        overflow-y: hidden;
+        flex-wrap: nowrap;
+        white-space: nowrap;
+        padding: 15px 20px; 
+        top: 70px; 
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: thin; 
+        scrollbar-color: #a11553 #f4e9d9; 
+    }
+
+    .submenu-pagina a {
+        font-size: 15px; 
+        background-color: #faf7f2; 
+        border: 1px solid #dfd6be; 
+        border-radius: 50px;       
+        padding: 8px 16px;        
+        flex-shrink: 0;           
+    }
+
+    .submenu-pagina::-webkit-scrollbar {
+        display: block; 
+        height: 4px;
+    }
+
+    .submenu-pagina::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    .submenu-pagina::-webkit-scrollbar-thumb {
+        background: #a11553; 
+        border-radius: 10px;
+    }
+
+    /* Tipografia */
+    .pagina-header h1 {
+        font-size: 40px; 
+    }
+
+    .pagina-header p {
+        font-size: 16px;
+    }
+
+    .bloco-conteudo h2 {
+        font-size: 26px; 
+    }
+
+    .bloco-conteudo p {
+        font-size: 16px;
+    }
+
+    /* Botão voltar ao topo */
     #btn-topo {
         bottom: 20px;
         right: 20px;
@@ -800,4 +646,16 @@ header {
         height: 48px;
         font-size: 18px;
     }
+}
+
+.card-wrapper .btn-card:first-child:hover {
+    background-color: #ff0000; 
+    color: white !important;   
+    border-color: #ff0000;
+}
+
+.card-wrapper .btn-card:last-child:hover {
+    background-color: #1DB954;
+    color: white !important;  
+    border-color: #1DB954;
 }
