@@ -728,3 +728,23 @@ header {
         padding: 8px 16px;
     }
 }
+.btn-voltar {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: transparent;
+    color: #a11553;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 50px;
+    border: 2px solid #a11553;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+.btn-voltar:hover {
+    background-color: #a11553;
+    color: white;
+}
