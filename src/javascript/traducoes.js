@@ -66,13 +66,10 @@ en: {
     "quem.sobre.p3": "Our mission is to connect cultures, facilitate integration, and help each student enjoy their experience in Spain with greater peace of mind and confidence.",
 
     // ===== PODCAST =====
-    "pod.titulo": "Podcast & News",
-    "pod.sub": "Soon, the space where we will share stories, tips, and news for your life in Seville.",
+    "pod.titulo": "News",
+    "pod.sub": "Soon, the space where we will share news and tips for your life in Seville.",
     "pod.soon": "We're preparing something great!",
     "pod.desc": "Our news blog is under construction. Soon you'll have access to news, guides, and the best tips for your daily life in Seville.",
-    "pod.youtube": "Visit our channel",
-    "pod.instagram": "Follow on Instagram",
-    "pod.aviso": "Follow us on our social media to be the first to know about new episodes and news.",
 
     // ===== TRAMITES =====
     "tram.titulo": "Procedures in Seville",
@@ -253,13 +250,10 @@ es: {
     "quem.sobre.p2": "Nuestro equipo cree en la importancia de compartir información, experiencias y conocimientos para facilitar la adaptación a una nueva realidad. Queremos construir un espacio en el que cualquier estudiante pueda encontrar respuestas, sentirse acompañado y descubrir todo lo que Sevilla tiene para ofrecer.",
     "quem.sobre.p3": "Nuestra misión es conectar culturas, facilitar la integración y ayudar a que cada estudiante disfrute de su experiencia en España con mayor tranquilidad y confianza.",
 
-    "pod.titulo": "Podcast y Noticias",
-    "pod.sub": "Muy pronto, el espacio donde compartiremos historias, consejos y novedades para tu vida en Sevilla.",
+    "pod.titulo": "Noticias",
+    "pod.sub": "Muy pronto, el espacio donde compartiremos noticias y consejos para tu vida en Sevilla.",
     "pod.soon": "¡Estamos preparando algo genial!",
     "pod.desc": "Nuestro blog de noticias está en construcción. Pronto tendrás acceso a novedades, guías y los mejores consejos para tu día a día en Sevilla.",
-    "pod.youtube": "Visitar nuestro canal",
-    "pod.instagram": "Seguir en Instagram",
-    "pod.aviso": "Síguenos en nuestras redes para ser el primero en enterarte de los nuevos episodios y noticias.",
 
     "tram.titulo": "Trámites en Sevilla",
     "tram.sub": "La burocracia puede ser complicada, pero estamos aquí para simplificarla. Selecciona el trámite que necesitas resolver.",
@@ -433,13 +427,10 @@ pt: {
     "quem.sobre.p2": "Nossa equipe acredita na importância de compartilhar informações, experiências e conhecimentos para facilitar a adaptação a uma nova realidade. Queremos construir um espaço onde qualquer estudante possa encontrar respostas, sentir-se acompanhado e descobrir tudo o que Sevilla tem a oferecer.",
     "quem.sobre.p3": "Nossa missão é conectar culturas, facilitar a integração e ajudar cada estudante a aproveitar sua experiência na Espanha com maior tranquilidade e confiança.",
 
-    "pod.titulo": "Podcast e Notícias",
-    "pod.sub": "Em breve, o espaço onde compartilharemos histórias, dicas e novidades para sua vida em Sevilla.",
+    "pod.titulo": "Notícias",
+    "pod.sub": "Em breve, o espaço onde compartilharemos notícias e dicas para sua vida em Sevilla.",
     "pod.soon": "Estamos preparando algo incrível!",
     "pod.desc": "Nosso blog de notícias está em construção. Em breve você terá acesso a novidades, guias e as melhores dicas para o seu dia a dia em Sevilla.",
-    "pod.youtube": "Visitar nosso canal",
-    "pod.instagram": "Seguir no Instagram",
-    "pod.aviso": "Siga-nos em nossas redes para ser o primeiro a saber sobre os novos episódios e notícias.",
 
     "tram.titulo": "Trâmites em Sevilla",
     "tram.sub": "A burocracia pode ser complicada, mas estamos aqui para simplificá-la. Selecione o trâmite que você precisa resolver.",
