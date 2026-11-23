@@ -1,19 +1,27 @@
-const mobileBtn = document.getElementById('mobile_btn');
-const mobileMenu = document.getElementById('mobile_menu');
+/* ============================================================
+   MENU MOBILE (hamburguer)
+   ============================================================ */
+document.addEventListener('DOMContentLoaded', () => {
+    const mobileBtn = document.getElementById('mobile_btn');
+    const mobileMenu = document.getElementById('mobile_menu');
 
-mobileBtn.addEventListener('click', () => {
-    mobileMenu.classList.toggle('active');
+    if (mobileBtn && mobileMenu) {
+        mobileBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+        });
+    }
 });
 
+/* ============================================================
+   BOTÃO VOLTAR AO INÍCIO
+   ============================================================ */
 (function criarBotaoTopo() {
-    // Cria o botão
     const btn = document.createElement('button');
     btn.id = 'btn-topo';
     btn.setAttribute('aria-label', 'Voltar ao início');
     btn.innerHTML = '<i class="fa-solid fa-arrow-up"></i>';
     document.body.appendChild(btn);
 
-    // Mostra/esconde conforme o scroll
     window.addEventListener('scroll', () => {
         if (window.scrollY > 300) {
             btn.classList.add('visivel');
@@ -22,64 +30,81 @@ mobileBtn.addEventListener('click', () => {
         }
     });
 
-    // Ação de clique
     btn.addEventListener('click', () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 })();
-/* ===== SISTEMA DE TRADUÇÃO ===== */
+
+/* ============================================================
+   SISTEMA DE TRADUÇÃO (EN / ES / PT)
+   ============================================================ */
 (function sistemaIdiomas() {
-    // Carrega o idioma salvo ou usa inglês como padrão
     let idiomaAtual = localStorage.getItem('idioma') || 'en';
 
-    // Função que aplica as traduções aos elementos com data-i18n
     function aplicarTraducoes() {
         document.querySelectorAll('[data-i18n]').forEach(el => {
             const chave = el.getAttribute('data-i18n');
             const traducao = TRADUCOES[idiomaAtual]?.[chave];
-            if (traducao) {
-                // Se o elemento tem filhos (ex: ícones), preserva-os
-                if (el.children.length > 0 && el.tagName === 'A') {
-                    // mantém os ícones e troca apenas o texto
-                    const icone = el.querySelector('i');
-                    el.innerHTML = (icone ? icone.outerHTML + ' ' : '') + traducao;
-                } else {
-                    el.textContent = traducao;
-                }
+            if (!traducao) return;
+
+            const icone = el.querySelector('i');
+            if (icone && (el.tagName === 'A' || el.tagName === 'BUTTON')) {
+                el.innerHTML = icone.outerHTML + ' ' + traducao;
+            } else {
+                el.textContent = traducao;
             }
         });
         document.documentElement.lang = idiomaAtual;
-        document.body.setAttribute('data-idioma', idiomaAtual);
     }
 
-    // Cria o seletor de idioma (no header)
     function criarSeletorIdioma() {
-        // Evita duplicar se já existir
         if (document.getElementById('seletor-idioma')) return;
 
         const wrapper = document.createElement('div');
         wrapper.id = 'seletor-idioma';
         wrapper.innerHTML = `
-            <button class="lang-btn" data-lang="en" title="English">EN</button>
-            <button class="lang-btn" data-lang="es" title="Español">ES</button>
-            <button class="lang-btn" data-lang="pt" title="Português">PT</button>
+            <button class="lang-btn" data-lang="en" title="English">🇬🇧 EN</button>
+            <button class="lang-btn" data-lang="es" title="Español">🇪🇸 ES</button>
+            <button class="lang-btn" data-lang="pt" title="Português">🇵🇹 PT</button>
         `;
-        // Insere antes do botão "Contacto" (btn-principal)
+
         const nav = document.getElementById('navbar');
         const btnContato = nav.querySelector('.btn-principal');
+        const menuMobile = document.getElementById('mobile_nav_list');
+
+        // 1) Desktop: insere antes do botão "Contacto"
         if (btnContato) {
             nav.insertBefore(wrapper, btnContato);
         } else {
             nav.appendChild(wrapper);
         }
 
-        // Evento de clique nos botões
-        wrapper.querySelectorAll('.lang-btn').forEach(btn => {
+        // 2) Mobile: clona para dentro do menu hamburguer
+        if (menuMobile) {
+            const liMobile = document.createElement('li');
+            liMobile.className = 'nav-item lang-mobile-item';
+
+            const wrapperMobile = wrapper.cloneNode(true);
+            wrapperMobile.id = 'seletor-idioma-mobile';
+            wrapperMobile.classList.add('seletor-mobile');
+
+            liMobile.appendChild(wrapperMobile);
+            menuMobile.appendChild(liMobile);
+        }
+
+        // 3) Evento único para todos os botões (desktop + mobile)
+        document.querySelectorAll('.lang-btn').forEach(btn => {
             btn.addEventListener('click', () => {
                 idiomaAtual = btn.getAttribute('data-lang');
                 localStorage.setItem('idioma', idiomaAtual);
                 aplicarTraducoes();
                 atualizarBotoesAtivos();
+
+                // Fecha o menu mobile se estiver aberto
+                const mm = document.getElementById('mobile_menu');
+                if (mm && mm.classList.contains('active')) {
+                    mm.classList.remove('active');
+                }
             });
         });
     }
@@ -90,7 +115,6 @@ mobileBtn.addEventListener('click', () => {
         });
     }
 
-    // Inicializa
     document.addEventListener('DOMContentLoaded', () => {
         criarSeletorIdioma();
         aplicarTraducoes();
