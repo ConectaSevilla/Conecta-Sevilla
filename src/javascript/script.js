@@ -14,26 +14,23 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 /* ============================================================
-   BOTÃO VOLTAR AO INÍCIO (Garantido)
+   BOTÃO VOLTAR AO INÍCIO
    ============================================================ */
 (function criarBotaoTopo() {
-    // Cria o botão
     const btn = document.createElement('button');
     btn.id = 'btn-topo';
     btn.setAttribute('aria-label', 'Voltar ao início');
     btn.innerHTML = '<i class="fa-solid fa-arrow-up"></i>';
     document.body.appendChild(btn);
 
-    // Mostra/esconde conforme o scroll
     window.addEventListener('scroll', () => {
-        if (window.scrollY > 300) {
+        if (window.scrollY > 100) { // Aparece mais rápido
             btn.classList.add('visivel');
         } else {
             btn.classList.remove('visivel');
         }
     });
 
-    // Ação de clique
     btn.addEventListener('click', () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
@@ -51,6 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const traducao = TRADUCOES[idiomaAtual]?.[chave];
             if (!traducao) return;
 
+            // Mantém ícones se existirem, mas força a troca do texto
             const icone = el.querySelector('i');
             if (icone && (el.tagName === 'A' || el.tagName === 'BUTTON')) {
                 el.innerHTML = icone.outerHTML + ' ' + traducao;
@@ -76,14 +74,12 @@ document.addEventListener('DOMContentLoaded', () => {
         const btnContato = nav.querySelector('.btn-principal');
         const menuMobile = document.getElementById('mobile_nav_list');
 
-        // 1) Desktop
         if (btnContato) {
             nav.insertBefore(wrapper, btnContato);
         } else {
             nav.appendChild(wrapper);
         }
 
-        // 2) Mobile
         if (menuMobile) {
             const liMobile = document.createElement('li');
             liMobile.className = 'nav-item lang-mobile-item';
@@ -96,7 +92,6 @@ document.addEventListener('DOMContentLoaded', () => {
             menuMobile.appendChild(liMobile);
         }
 
-        // 3) Evento de clique
         document.querySelectorAll('.lang-btn').forEach(btn => {
             btn.addEventListener('click', () => {
                 idiomaAtual = btn.getAttribute('data-lang');
