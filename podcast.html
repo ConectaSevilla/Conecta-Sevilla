@@ -1,72 +1,67 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Podcast y Noticias - Conecta Sevilla</title>
-    
+    <title data-i18n="pod.titulo">Podcast y Noticias - Conecta Sevilla</title>
     <link rel="stylesheet" href="src/styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-
     <header>
         <nav id="navbar">
             <a href="index.html" class="logo-link">
                 <img src="img/logo.png" alt="Conecta Sevilla" class="logo">
             </a>
-
             <ul id="nav_list">
-                <li class="nav-item"><a href="index.html">Inicio</a></li>
-                <li class="nav-item"><a href="sobre.html">Sobre el proyecto</a></li>
-                <li class="nav-item"><a href="quienes.html">Quienes Somos</a></li>
-                <li class="nav-item"><a href="podcast.html" class="active">Podcast y Noticias</a></li>
-                <li class="nav-item"><a href="tramites.html">Trámites</a></li>
-                <li class="nav-item"><a href="seguridad.html">Seguridad</a></li>
+                <li class="nav-item"><a href="index.html" data-i18n="nav.inicio">Inicio</a></li>
+                <li class="nav-item"><a href="podcast.html" class="active" data-i18n="nav.podcast">Noticias</a></li>
+                <li class="nav-item"><a href="tramites.html" data-i18n="nav.tramites">Trámites</a></li>
+                <li class="nav-item"><a href="seguridad.html" data-i18n="nav.seguridad">Seguridad</a></li>
+                <li class="nav-item"><a href="sobre.html" data-i18n="nav.sobre">Sobre el proyecto</a></li>
+                <li class="nav-item"><a href="quienes.html" data-i18n="nav.quem">Quienes Somos</a></li>
             </ul>
-
-            <a href="contacto.html" class="btn-principal">Contacto</a>
+            <a href="contacto.html" class="btn-principal" data-i18n="nav.contacto">Contacto</a>
             <button id="mobile_btn"><i class="fa-solid fa-bars"></i></button>
         </nav>
         <div id="mobile_menu">
             <ul id="mobile_nav_list">
-                <li class="nav-item"><a href="index.html">Inicio</a></li>
-                <li class="nav-item"><a href="sobre.html">Sobre el proyecto</a></li>
-                <li class="nav-item"><a href="quienes.html">Quienes Somos</a></li>
-                <li class="nav-item"><a href="podcast.html">Podcast y Noticias</a></li>
-                <li class="nav-item"><a href="tramites.html">Trámites</a></li>
-                <li class="nav-item"><a href="seguridad.html">Seguridad</a></li>
-                <li class="nav-item"><a href="contacto.html">Contacto</a></li>
+                <li class="nav-item"><a href="index.html" data-i18n="nav.inicio">Inicio</a></li>
+                <li class="nav-item"><a href="podcast.html" data-i18n="nav.podcast">Noticias</a></li>
+                <li class="nav-item"><a href="tramites.html" data-i18n="nav.tramites">Trámites</a></li>
+                <li class="nav-item"><a href="seguridad.html" data-i18n="nav.seguridad">Seguridad</a></li>
+                <li class="nav-item"><a href="sobre.html" data-i18n="nav.sobre">Sobre el proyecto</a></li>
+                <li class="nav-item"><a href="quienes.html" data-i18n="nav.quem">Quienes Somos</a></li>
+                <li class="nav-item"><a href="contacto.html" data-i18n="nav.contacto">Contacto</a></li>
             </ul>
         </div>
     </header>
 
     <section class="pagina-header">
-        <h1>Podcast y Noticias</h1>
-        <p>Muy pronto, el espacio donde compartiremos historias, consejos y novedades para tu vida en Sevilla.</p>
+        <h1 data-i18n="pod.titulo">Podcast y Noticias</h1>
+        <p data-i18n="pod.sub">Muy pronto, el espacio donde compartiremos historias, consejos y novedades para tu vida en Sevilla.</p>
     </section>
 
     <section class="coming-soon">
         <div class="icone-grande">
             <i class="fa-solid fa-microphone-lines"></i>
         </div>
-        
-        <h2>¡Estamos preparando algo genial!</h2>
-        <p>Nuestro podcast y nuestro blog de noticias están en construcción. Pronto tendrás acceso a entrevistas exclusivas, guías en audio y los mejores consejos para sobrevivir a la burocracia sevillana.</p>
-        
+        <h2 data-i18n="pod.soon">¡Estamos preparando algo genial!</h2>
+        <p data-i18n="pod.desc">Nuestro podcast y nuestro blog de noticias están en construcción. Pronto tendrás acceso a entrevistas exclusivas, guías en audio y los mejores consejos para sobrevivir a la burocracia sevillana.</p>
+
         <div class="botoes-acao">
             <a href="https://youtube.com" target="_blank" class="btn-youtube">
-                <i class="fa-brands fa-youtube"></i> Visitar nuestro canal
+                <i class="fa-brands fa-youtube"></i> <span data-i18n="pod.youtube">Visitar nuestro canal</span>
             </a>
-            
             <a href="https://instagram.com" target="_blank" class="btn-instagram">
-                <i class="fa-brands fa-instagram"></i> Seguir en Instagram
+                <i class="fa-brands fa-instagram"></i> <span data-i18n="pod.instagram">Seguir en Instagram</span>
             </a>
         </div>
 
-        <p class="aviso-redes"><small>Síguenos en nuestras redes para ser el primero en enterarte de los nuevos episodios y noticias.</small></p>
+        <p class="aviso-redes"><small data-i18n="pod.aviso">Síguenos en nuestras redes para ser el primero en enterarte de los nuevos episodios y noticias.</small></p>
     </section>
 
+    <script src="src/javascript/traducoes.js"></script>
     <script src="src/javascript/script.js"></script>
 </body>
 </html>
