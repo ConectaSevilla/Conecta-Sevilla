@@ -682,3 +682,122 @@ header {
         margin-top: 10px;
     }
 }
+/* ============================================================
+   SELETOR DE IDIOMA — DESKTOP
+   ============================================================ */
+#seletor-idioma,
+.seletor-mobile {
+    display: flex;
+    gap: 4px;
+    background: #faf7f2;
+    border-radius: 20px;
+    padding: 4px;
+    align-items: center;
+}
+
+#seletor-idioma {
+    margin-right: 15px;
+}
+
+.lang-btn {
+    background: transparent;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 16px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #a11553;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: 'Poppins', sans-serif;
+    white-space: nowrap;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.lang-btn:hover {
+    background: rgba(161, 21, 83, 0.1);
+}
+
+.lang-btn.ativo {
+    background: #a11553;
+    color: white;
+}
+
+/* ============================================================
+   BOTÃO VOLTAR AO INÍCIO
+   ============================================================ */
+#btn-topo {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: #a11553;
+    color: white;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(161, 21, 83, 0.4);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+    z-index: 999;
+}
+
+#btn-topo.visivel {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+#btn-topo:hover {
+    background-color: #599d93;
+    transform: translateY(-3px) scale(1.05);
+}
+
+/* ============================================================
+   SELETOR DE IDIOMA — MOBILE
+   ============================================================ */
+@media screen and (max-width: 900px) {
+    /* Esconde o seletor do header */
+    #seletor-idioma {
+        display: none !important;
+    }
+
+    /* Item que segura o seletor no menu mobile */
+    .lang-mobile-item {
+        margin-top: 15px;
+        padding-top: 15px;
+        border-top: 1px solid #dfd6be;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .seletor-mobile {
+        gap: 8px;
+        padding: 6px;
+    }
+
+    .seletor-mobile .lang-btn {
+        font-size: 14px;
+        padding: 10px 16px;
+        border-radius: 20px;
+    }
+
+    /* Botão voltar ao topo fica menor */
+    #btn-topo {
+        bottom: 20px;
+        right: 20px;
+        width: 48px;
+        height: 48px;
+        font-size: 18px;
+    }
+}
