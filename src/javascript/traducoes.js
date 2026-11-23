@@ -174,11 +174,18 @@ en: {
     "cont.email.p2": "If you need information about our project, want to share an experience, or have found content we should update, you can contact us via email. We are here to keep improving Conecta Sevilla for all international students.",
     "cont.email.p3": "Your opinion also helps build our community!",
     "cont.email.btn": "Send E-mail",
-    "cont.social": "Our Community",
-    "cont.social.p1": "The experience of studying in another country is much better when you can share it!",
-    "cont.social.p2": "Through our social media we want to create a community of international and local students where they can share experiences, solve doubts, exchange recommendations, and stay informed.",
-    "cont.social.p3": "We will publish useful tips, news, information of interest, and content related to life in Seville.",
-    "cont.social.btn": "Join the Group",
+    
+    "cont.whatsapp": "WhatsApp Community",
+    "cont.whatsapp.p1": "The experience of studying in another country is much better when you can share it!",
+    "cont.whatsapp.p2": "Join our WhatsApp group to connect with other international and local students, solve doubts in real time, exchange recommendations and stay up to date with the news.",
+    "cont.whatsapp.p3": "This is your space to share experiences, help other students and make new friends in Seville.",
+    "cont.whatsapp.btn": "Join the Group",
+
+    "cont.instagram": "Instagram",
+    "cont.instagram.p1": "Follow us to always stay connected!",
+    "cont.instagram.p2": "On our Instagram we publish useful tips, news, information of interest and content related to life in Seville.",
+    "cont.instagram.p3": "We want this space to be yours, where you can share your experiences, discover new places and meet people who are living an adventure similar to yours.",
+    "cont.instagram.btn": "Follow on Instagram",
 
     "lang.pt": "Português",
     "lang.es": "Español",
@@ -339,6 +346,7 @@ es: {
     "seg.ambiente.p2": "Sevilla es una ciudad llena de espacios, barrios y ambientes diferentes. Por eso, queremos ayudarte a familiarizarte con la ciudad y ofrecerte recomendaciones para desenvolverte con mayor confianza en tu día a día.",
     "seg.ambiente.p3": "En este apartado encontrarás consejos sobre prevención, convivencia, desplazamientos y comportamiento responsable en los espacios públicos. Nuestro objetivo es promover una experiencia positiva, en la que puedas disfrutar de la ciudad sin dejar de cuidar de ti y de los demás.",
 
+    // ===== CONTACTO =====
     "cont.titulo": "Contacto",
     "cont.sub": "¿Tienes alguna duda, sugerencia o propuesta de colaboración? Nos encantaría escucharte.",
     "cont.email": "Correo Electrónico",
@@ -346,11 +354,18 @@ es: {
     "cont.email.p2": "Si necesitas información sobre nuestro proyecto, quieres compartir una experiencia o has encontrado algún contenido que deberíamos actualizar, puedes ponerte en contacto con nosotros a través del correo electrónico. Estamos aquí para seguir mejorando Conecta Sevilla para todos los estudiantes internacionales.",
     "cont.email.p3": "¡Tu opinión también ayuda a construir nuestra comunidad!",
     "cont.email.btn": "Enviar E-mail",
-    "cont.social": "Nuestra Comunidad",
-    "cont.social.p1": "¡La experiencia de estudiar en otro país es mucho mejor cuando puedes compartirla!",
-    "cont.social.p2": "A través de nuestras redes sociales queremos crear una comunidad de estudiantes internacionales y locales donde compartir experiencias, resolver dudas, intercambiar recomendaciones y mantenerse informado.",
-    "cont.social.p3": "Publicaremos consejos útiles, novedades, información de interés y contenidos relacionados con la vida en Sevilla.",
-    "cont.social.btn": "Entrar al Grupo",
+    
+    "cont.whatsapp": "Comunidad WhatsApp",
+    "cont.whatsapp.p1": "¡La experiencia de estudiar en otro país es mucho mejor cuando puedes compartirla!",
+    "cont.whatsapp.p2": "Únete a nuestro grupo de WhatsApp para conectar con otros estudiantes internacionales y locales, resolver dudas en tiempo real, intercambiar recomendaciones y estar al tanto de las novedades.",
+    "cont.whatsapp.p3": "Este es tu espacio para compartir experiencias, ayudar a otros estudiantes y hacer nuevos amigos en Sevilla.",
+    "cont.whatsapp.btn": "Entrar al Grupo",
+
+    "cont.instagram": "Instagram",
+    "cont.instagram.p1": "¡Síguenos para estar siempre conectado!",
+    "cont.instagram.p2": "En nuestro Instagram publicamos consejos útiles, novedades, información de interés y contenidos relacionados con la vida en Sevilla.",
+    "cont.instagram.p3": "Queremos que este espacio sea tuyo, donde podrás compartir tus experiencias, descubrir lugares nuevos y conocer a personas que están viviendo una aventura parecida a la tuya.",
+    "cont.instagram.btn": "Seguir en Instagram",
 
     "lang.pt": "Português",
     "lang.es": "Español",
@@ -511,6 +526,7 @@ pt: {
     "seg.ambiente.p2": "Sevilla é uma cidade cheia de espaços, bairros e ambientes diferentes. Por isso, queremos ajudar você a se familiarizar com a cidade e oferecer recomendações para se desenvolver com maior confiança no seu dia a dia.",
     "seg.ambiente.p3": "Nesta seção você encontrará dicas sobre prevenção, convivência, deslocamentos e comportamento responsável nos espaços públicos. Nosso objetivo é promover uma experiência positiva, na qual você possa aproveitar a cidade sem deixar de cuidar de si e dos outros.",
 
+    // ===== CONTACTO =====
     "cont.titulo": "Contato",
     "cont.sub": "Tem alguma dúvida, sugestão ou proposta de colaboração? Adoraríamos ouvir você.",
     "cont.email": "E-mail",
@@ -518,12 +534,19 @@ pt: {
     "cont.email.p2": "Se precisar de informações sobre nosso projeto, quiser compartilhar uma experiência ou tiver encontrado algum conteúdo que devamos atualizar, você pode entrar em contato conosco por e-mail. Estamos aqui para continuar melhorando a Conecta Sevilla para todos os estudantes internacionais.",
     "cont.email.p3": "Sua opinião também ajuda a construir nossa comunidade!",
     "cont.email.btn": "Enviar E-mail",
-    "cont.social": "Nossa Comunidade",
-    "cont.social.p1": "A experiência de estudar em outro país é muito melhor quando você pode compartilhá-la!",
-    "cont.social.p2": "Através das nossas redes sociais queremos criar uma comunidade de estudantes internacionais e locais onde compartilhar experiências, resolver dúvidas, trocar recomendações e se manter informado.",
-    "cont.social.p3": "Publicaremos dicas úteis, novidades, informações de interesse e conteúdos relacionados à vida em Sevilla.",
-    "cont.social.btn": "Entrar no Grupo",
+    
+    "cont.whatsapp": "Comunidade WhatsApp",
+    "cont.whatsapp.p1": "A experiência de estudar em outro país é muito melhor quando você pode compartilhá-la!",
+    "cont.whatsapp.p2": "Junte-se ao nosso grupo de WhatsApp para conectar com outros estudantes internacionais e locais, resolver dúvidas em tempo real, trocar recomendações e ficar por dentro das novidades.",
+    "cont.whatsapp.p3": "Este é o seu espaço para compartilhar experiências, ajudar outros estudantes e fazer novos amigos em Sevilla.",
+    "cont.whatsapp.btn": "Entrar no Grupo",
 
+    "cont.instagram": "Instagram",
+    "cont.instagram.p1": "Siga-nos para estar sempre conectado!",
+    "cont.instagram.p2": "No nosso Instagram publicamos dicas úteis, novidades, informações de interesse e conteúdos relacionados à vida em Sevilla.",
+    "cont.instagram.p3": "Queremos que este espaço seja seu, onde você poderá compartilhar suas experiências, descobrir novos lugares e conhecer pessoas que estão vivendo uma aventura parecida com a sua.",
+    "cont.instagram.btn": "Seguir no Instagram",
+   
     "lang.pt": "Português",
     "lang.es": "Español",
     "lang.en": "English"
