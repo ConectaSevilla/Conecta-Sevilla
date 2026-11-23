@@ -6,22 +6,25 @@ document.addEventListener('DOMContentLoaded', () => {
     const mobileMenu = document.getElementById('mobile_menu');
 
     if (mobileBtn && mobileMenu) {
-        mobileBtn.addEventListener('click', () => {
+        mobileBtn.onclick = function(e) {
+            e.preventDefault(); 
             mobileMenu.classList.toggle('active');
-        });
+        };
     }
 });
 
 /* ============================================================
-   BOTÃO VOLTAR AO INÍCIO
+   BOTÃO VOLTAR AO INÍCIO (Garantido)
    ============================================================ */
 (function criarBotaoTopo() {
+    // Cria o botão
     const btn = document.createElement('button');
     btn.id = 'btn-topo';
     btn.setAttribute('aria-label', 'Voltar ao início');
     btn.innerHTML = '<i class="fa-solid fa-arrow-up"></i>';
     document.body.appendChild(btn);
 
+    // Mostra/esconde conforme o scroll
     window.addEventListener('scroll', () => {
         if (window.scrollY > 300) {
             btn.classList.add('visivel');
@@ -30,6 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    // Ação de clique
     btn.addEventListener('click', () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
@@ -72,14 +76,14 @@ document.addEventListener('DOMContentLoaded', () => {
         const btnContato = nav.querySelector('.btn-principal');
         const menuMobile = document.getElementById('mobile_nav_list');
 
-        // 1) Desktop: insere antes do botão "Contacto"
+        // 1) Desktop
         if (btnContato) {
             nav.insertBefore(wrapper, btnContato);
         } else {
             nav.appendChild(wrapper);
         }
 
-        // 2) Mobile: clona para dentro do menu hamburguer
+        // 2) Mobile
         if (menuMobile) {
             const liMobile = document.createElement('li');
             liMobile.className = 'nav-item lang-mobile-item';
@@ -92,7 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
             menuMobile.appendChild(liMobile);
         }
 
-        // 3) Evento único para todos os botões (desktop + mobile)
+        // 3) Evento de clique
         document.querySelectorAll('.lang-btn').forEach(btn => {
             btn.addEventListener('click', () => {
                 idiomaAtual = btn.getAttribute('data-lang');
@@ -100,7 +104,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 aplicarTraducoes();
                 atualizarBotoesAtivos();
 
-                // Fecha o menu mobile se estiver aberto
                 const mm = document.getElementById('mobile_menu');
                 if (mm && mm.classList.contains('active')) {
                     mm.classList.remove('active');
