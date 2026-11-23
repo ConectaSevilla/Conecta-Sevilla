@@ -1,102 +1,93 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trámites - Conecta Sevilla</title>
-    
+    <title data-i18n="tram.titulo">Trámites - Conecta Sevilla</title>
     <link rel="stylesheet" href="src/styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-
     <header>
         <nav id="navbar">
             <a href="index.html" class="logo-link">
                 <img src="img/logo.png" alt="Conecta Sevilla" class="logo">
             </a>
-
             <ul id="nav_list">
-                <li class="nav-item"><a href="index.html">Inicio</a></li>
-                <li class="nav-item"><a href="sobre.html">Sobre el proyecto</a></li>
-                <li class="nav-item"><a href="quienes.html">Quienes Somos</a></li>
-                <li class="nav-item"><a href="podcast.html">Podcast y Noticias</a></li>
-                <li class="nav-item"><a href="tramites.html" class="active">Trámites</a></li>
-                <li class="nav-item"><a href="seguridad.html">Seguridad</a></li>
+                <li class="nav-item"><a href="index.html" data-i18n="nav.inicio">Inicio</a></li>
+                <li class="nav-item"><a href="podcast.html" data-i18n="nav.podcast">Noticias</a></li>
+                <li class="nav-item"><a href="tramites.html" class="active" data-i18n="nav.tramites">Trámites</a></li>
+                <li class="nav-item"><a href="seguridad.html" data-i18n="nav.seguridad">Seguridad</a></li>
+                <li class="nav-item"><a href="sobre.html" data-i18n="nav.sobre">Sobre el proyecto</a></li>
+                <li class="nav-item"><a href="quienes.html" data-i18n="nav.quem">Quienes Somos</a></li>
             </ul>
-
-            <a href="contacto.html" class="btn-principal">Contacto</a>
+            <a href="contacto.html" class="btn-principal" data-i18n="nav.contacto">Contacto</a>
             <button id="mobile_btn"><i class="fa-solid fa-bars"></i></button>
         </nav>
         <div id="mobile_menu">
             <ul id="mobile_nav_list">
-                <li class="nav-item"><a href="index.html">Inicio</a></li>
-                <li class="nav-item"><a href="sobre.html">Sobre el proyecto</a></li>
-                <li class="nav-item"><a href="quienes.html">Quienes Somos</a></li>
-                <li class="nav-item"><a href="podcast.html">Podcast y Noticias</a></li>
-                <li class="nav-item"><a href="tramites.html">Trámites</a></li>
-                <li class="nav-item"><a href="seguridad.html">Seguridad</a></li>
-                <li class="nav-item"><a href="contacto.html">Contacto</a></li>
+                <li class="nav-item"><a href="index.html" data-i18n="nav.inicio">Inicio</a></li>
+                <li class="nav-item"><a href="podcast.html" data-i18n="nav.podcast">Noticias</a></li>
+                <li class="nav-item"><a href="tramites.html" data-i18n="nav.tramites">Trámites</a></li>
+                <li class="nav-item"><a href="seguridad.html" data-i18n="nav.seguridad">Seguridad</a></li>
+                <li class="nav-item"><a href="sobre.html" data-i18n="nav.sobre">Sobre el proyecto</a></li>
+                <li class="nav-item"><a href="quienes.html" data-i18n="nav.quem">Quienes Somos</a></li>
+                <li class="nav-item"><a href="contacto.html" data-i18n="nav.contacto">Contacto</a></li>
             </ul>
         </div>
     </header>
 
     <section class="pagina-header">
-        <h1>Trámites en Sevilla</h1>
-        <p>La burocracia puede ser complicada, pero estamos aquí para simplificarla. Selecciona el trámite que necesitas resolver.</p>
+        <h1 data-i18n="tram.titulo">Trámites en Sevilla</h1>
+        <p data-i18n="tram.sub">La burocracia puede ser complicada, pero estamos aquí para simplificarla. Selecciona el trámite que necesitas resolver.</p>
     </section>
 
     <section class="areas">
         <div class="grid-cards">
-            
             <a href="visados.html" class="card-link">
                 <div class="card">
                     <i class="fa-solid fa-passport icone-card"></i>
-                    <h3>Visados</h3>
-                    <p>Información sobre el visado de estudios, requisitos y renovaciones antes de llegar a España.</p>
-                    <span class="btn-card">Ver guía</span>
+                    <h3 data-i18n="tram.visados">Visados</h3>
+                    <p data-i18n="tram.visados.desc">Información sobre el visado de estudios, requisitos y renovaciones antes de llegar a España.</p>
+                    <span class="btn-card" data-i18n="tram.ver">Ver guía</span>
                 </div>
             </a>
-
             <a href="nie.html" class="card-link">
                 <div class="card">
                     <i class="fa-solid fa-id-card icone-card"></i>
-                    <h3>NIE</h3>
-                    <p>Todo sobre el Número de Identidad de Extranjero: cómo pedir cita y qué documentos llevar.</p>
-                    <span class="btn-card">Ver guía</span>
+                    <h3 data-i18n="tram.nie">NIE</h3>
+                    <p data-i18n="tram.nie.desc">Todo sobre el Número de Identidad de Extranjero: cómo pedir cita y qué documentos llevar.</p>
+                    <span class="btn-card" data-i18n="tram.ver">Ver guía</span>
                 </div>
             </a>
-
             <a href="tie.html" class="card-link">
                 <div class="card">
                     <i class="fa-solid fa-address-card icone-card"></i>
-                    <h3>TIE</h3>
-                    <p>La Tarjeta de Identidad de Extranjero. Aprende a solicitarla y a renovarla paso a paso.</p>
-                    <span class="btn-card">Ver guía</span>
+                    <h3 data-i18n="tram.tie">TIE</h3>
+                    <p data-i18n="tram.tie.desc">La Tarjeta de Identidad de Extranjero. Aprende a solicitarla y a renovarla paso a paso.</p>
+                    <span class="btn-card" data-i18n="tram.ver">Ver guía</span>
                 </div>
             </a>
-
             <a href="empadronamiento.html" class="card-link">
                 <div class="card">
                     <i class="fa-solid fa-house-user icone-card"></i>
-                    <h3>Empadronamiento</h3>
-                    <p>El registro en el ayuntamiento de Sevilla. Esencial para muchos trámites y servicios.</p>
-                    <span class="btn-card">Ver guía</span>
+                    <h3 data-i18n="tram.emp">Empadronamiento</h3>
+                    <p data-i18n="tram.emp.desc">El registro en el ayuntamiento de Sevilla. Esencial para muchos trámites y servicios.</p>
+                    <span class="btn-card" data-i18n="tram.ver">Ver guía</span>
                 </div>
             </a>
-
             <a href="matriculas.html" class="card-link">
                 <div class="card">
                     <i class="fa-solid fa-graduation-cap icone-card"></i>
-                    <h3>Matrículas</h3>
-                    <p>Guía para la matrícula en universidades y escuelas de idiomas en la ciudad.</p>
-                    <span class="btn-card">Ver guía</span>
+                    <h3 data-i18n="tram.mat">Matrículas</h3>
+                    <p data-i18n="tram.mat.desc">Guía para la matrícula en universidades y escuelas de idiomas en la ciudad.</p>
+                    <span class="btn-card" data-i18n="tram.ver">Ver guía</span>
                 </div>
             </a>
-
         </div>
     </section>
 
+    <script src="src/javascript/traducoes.js"></script>
     <script src="src/javascript/script.js"></script>
 </body>
 </html>
