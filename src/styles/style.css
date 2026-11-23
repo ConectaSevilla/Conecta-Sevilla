@@ -691,3 +691,8 @@ header {
         margin: 0 auto;
     }
 }
+#btn-topo.visivel {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: translateY(0) !important;
+}
