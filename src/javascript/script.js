@@ -16,25 +16,23 @@ document.addEventListener('DOMContentLoaded', () => {
 /* ============================================================
    BOTÃO VOLTAR AO INÍCIO
    ============================================================ */
-(function criarBotaoTopo() {
-    const btn = document.createElement('button');
-    btn.id = 'btn-topo';
-    btn.setAttribute('aria-label', 'Voltar ao início');
-    btn.innerHTML = '<i class="fa-solid fa-arrow-up"></i>';
-    document.body.appendChild(btn);
+document.addEventListener('DOMContentLoaded', () => {
+    const btnTopo = document.getElementById('btn-topo');
+    
+    if (btnTopo) {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                btnTopo.classList.add('visivel');
+            } else {
+                btnTopo.classList.remove('visivel');
+            }
+        });
 
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 100) { // Aparece mais rápido
-            btn.classList.add('visivel');
-        } else {
-            btn.classList.remove('visivel');
-        }
-    });
-
-    btn.addEventListener('click', () => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-})();
+        btnTopo.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    }
+});
 
 /* ============================================================
    SISTEMA DE TRADUÇÃO (EN / ES / PT)
@@ -48,7 +46,6 @@ document.addEventListener('DOMContentLoaded', () => {
             const traducao = TRADUCOES[idiomaAtual]?.[chave];
             if (!traducao) return;
 
-            // Mantém ícones se existirem, mas força a troca do texto
             const icone = el.querySelector('i');
             if (icone && (el.tagName === 'A' || el.tagName === 'BUTTON')) {
                 el.innerHTML = icone.outerHTML + ' ' + traducao;
