@@ -25,8 +25,8 @@ en: {
     "home.seguridad.desc": "Emergency contacts, risks, and common scams.",
     "home.comunidad": "Community",
     "home.comunidad.desc": "Connect with other students and share experiences.",
-    "home.podcast": "Podcast & News", // Mantido para o titulo da pagina podcast
-    "home.news": "News", // Usado no card da Home
+    "home.podcast": "Podcast & News",
+    "home.news": "News",
     "home.podcast.desc": "News, tips, and interviews for your daily life.",
     "home.acceder": "Access",
 
@@ -546,7 +546,7 @@ pt: {
     "cont.instagram.p2": "No nosso Instagram publicamos dicas úteis, novidades, informações de interesse e conteúdos relacionados à vida em Sevilla.",
     "cont.instagram.p3": "Queremos que este espaço seja seu, onde você poderá compartilhar suas experiências, descobrir novos lugares e conhecer pessoas que estão vivendo uma aventura parecida com a sua.",
     "cont.instagram.btn": "Seguir no Instagram",
-   
+
     "lang.pt": "Português",
     "lang.es": "Español",
     "lang.en": "English"
