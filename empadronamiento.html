@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-i18n="emp.titulo">Empadronamiento - Conecta Sevilla</title>
-    <link rel="stylesheet" href="src/styles/style.css">
+    <title data-i18n="emp.titulo">Registration - Conecta Sevilla</title>
+    <link rel="stylesheet" href="src/styles/style.css?v=5">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -39,38 +39,49 @@
 
     <section class="pagina-header">
         <h1 data-i18n="emp.titulo">Empadronamiento</h1>
-        <p data-i18n="emp.sub">El registro municipal que te convierte en un residente oficial de Sevilla.</p>
+        <p data-i18n="emp.sub">El registro municipal que te convierte en vecino oficial de Sevilla.</p>
     </section>
 
     <section class="pagina-conteudo">
         <div style="margin-bottom: 30px;">
-            <a href="tramites.html" class="btn-card" style="display: inline-block;">
+            <a href="tramites.html" class="btn-voltar">
                 <i class="fa-solid fa-arrow-left"></i> <span data-i18n="tram.voltar">Volver a Trámites</span>
             </a>
         </div>
 
         <div class="bloco-conteudo" style="margin-top: 0;">
-            <h2 data-i18n="emp.oque">¿Qué es el Empadronamiento?</h2>
-            <p data-i18n="emp.oque.p">El empadronamiento es la inscripción en el padrón municipal, es decir, el registro de las personas que residen habitualmente en un municipio. Si acabas de instalarte en Sevilla, es importante informarte sobre cómo realizar este trámite, dónde solicitarlo y qué documentación es necesaria.</p>
+            <h2 data-i18n="emp.oque">¿Qué es y para qué sirve?</h2>
+            <p data-i18n="emp.oque.p">Es la inscripción en el padrón municipal. Toda persona que vive en España está obligada a inscribirse en el municipio donde reside habitualmente. Prueba tu residencia y domicilio. Te sirve para acceder a servicios públicos (como la sanidad), para algunos trámites universitarios y de extranjería.</p>
         </div>
 
         <div class="bloco-conteudo">
-            <h2 data-i18n="emp.como">¿Cómo realizarlo en Sevilla?</h2>
-            <p data-i18n="emp.como.p">En esta sección encontrarás orientación sobre el procedimiento, los documentos habituales y los canales oficiales del Ayuntamiento de Sevilla para realizar consultas o solicitar una cita.</p>
+            <h2 data-i18n="emp.como">Cómo hacerlo en Sevilla</h2>
+            <p data-i18n="emp.como.p">El alta y el cambio de domicilio se hacen con cita previa (en el 010 o en sevilla.org). Se resuelve como máximo en 3 meses desde la solicitud.</p>
+            <p><strong data-i18n="emp.como.doc.titulo">Documentación:</strong></p>
+            <ul style="margin-left: 20px; margin-bottom: 20px; font-size: 18px; line-height: 1.8; color: #353535;">
+                <li data-i18n="emp.como.doc.1">Hoja padronal rellena y firmada.</li>
+                <li data-i18n="emp.como.doc.2">Identidad: UE (certificado de registro + DNI/pasaporte) o Fuera de la UE (TIE o pasaporte).</li>
+                <li data-i18n="emp.como.doc.3">Vivienda: contrato de alquiler vigente con el último recibo, o título de propiedad. En piso compartido, se necesita autorización de alguien empadronado o del propietario.</li>
+            </ul>
         </div>
 
         <div class="bloco-conteudo">
-            <h2 data-i18n="emp.para">¿Para qué sirve?</h2>
+            <h2 data-i18n="emp.manter">Mantenerlo al día</h2>
+            <ul style="margin-left: 20px; margin-bottom: 20px; font-size: 18px; line-height: 1.8; color: #353535;">
+                <li data-i18n="emp.manter.1"><strong>Fuera de la UE:</strong> Se renueva cada 2 años; si no lo haces, se da de baja.</li>
+                <li data-i18n="emp.manter.2"><strong>UE:</strong> Confirmación periódica cada 5 años.</li>
+                <li data-i18n="emp.manter.3"><strong>Cambio de casa:</strong> Comunícalo con cita.</li>
+                <li data-i18n="emp.manter.4"><strong>Te vas de Sevilla:</strong> Pide la baja.</li>
+            </ul>
             <p style="background-color: #f4e9d9; padding: 15px; border-left: 5px solid #a11553; border-radius: 5px; font-weight: 500;">
                 <i class="fa-solid fa-house" style="color: #a11553; margin-right: 10px;"></i>
-                <span data-i18n="emp.para.p">Tener el empadronamiento es esencial para poder votar, acceder a servicios públicos, e incluso es un requisito obligatorio para algunos trámites universitarios y de extranjería.</span>
+                <span data-i18n="emp.aviso">Pide el certificado o volante de empadronamiento cuando lo necesites (muchas entidades lo aceptan solo si es reciente). Empadronarte con un domicilio falso puede acarrearte problemas legales.</span>
             </p>
         </div>
     </section>
 
-
     <button id="btn-topo" aria-label="Voltar ao início"><i class="fa-solid fa-arrow-up"></i></button>
-    <script src="src/javascript/traducoes.js?v=5"></script>
-    <script src="src/javascript/script.js?v=5"></script>
+    <script src="src/javascript/traducoes.js?v=6"></script>
+    <script src="src/javascript/script.js?v=6"></script>
 </body>
 </html>
