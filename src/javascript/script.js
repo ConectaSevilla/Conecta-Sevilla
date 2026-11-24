@@ -116,3 +116,18 @@ document.addEventListener('DOMContentLoaded', () => {
         atualizarBotoesAtivos();
     });
 })();
+
+/* ============================================================
+   FUNÇÃO DO BOTÃO VOLTAR INTELIGENTE
+   ============================================================ */
+function voltarPagina(event) {
+    event.preventDefault(); // Impede o link de pular para o topo (#)
+    
+    // Verifica se o usuário veio de uma página do próprio site
+    if (document.referrer && document.referrer.includes(window.location.hostname)) {
+        window.history.back();
+    } else {
+        // Se ele veio do Google, WhatsApp ou abriu direto, manda para a Home
+        window.location.href = 'index.html';
+    }
+}
