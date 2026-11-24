@@ -72,7 +72,13 @@ en: {
     "pod.desc": "Our news blog is under construction. Soon you'll have access to news, guides, and the best tips for your daily life in Seville.",
 
     // ===== TRAMITES =====
-        // NOVAS CHAVES - INGLÊS
+    "tram.titulo": "Procedures in Seville",
+    "tram.sub": "Bureaucracy can be complicated, but we are here to simplify it.",
+    "tram.antes.titulo": "Before you start: where are you from?",
+    "tram.antes.p1": "Everything changes depending on your nationality. There are three situations:",
+    "tram.antes.l1": "<strong>EU / EEA / Switzerland:</strong> You have freedom of movement. You don't need a visa, but you do need to register if you stay more than 3 months.",
+    "tram.antes.l2": "<strong>Outside the EU, visa-exempt:</strong> You can enter without a visa for up to 90 days, but to study more than 90 days you need a study stay authorization.",
+    "tram.antes.l3": "<strong>Outside the EU, visa required:</strong> You need a visa from day one.",
     "tram.tabela.titulo": "Comparison table",
     "tram.tab.col1": "Procedure",
     "tram.tab.col2": "EU / EEA / Switzerland",
@@ -89,10 +95,27 @@ en: {
     "tram.tab.emp": "Registration (Empadronamiento)",
     "tram.tab.emp.ue": "Mandatory if you live here",
     "tram.tab.emp.fuera": "Mandatory if you live here",
+    "tram.exemplo": "<strong>Example:</strong> A Brazilian student requests authorization at the consulate before traveling. Upon arrival, she registers and requests her TIE within 1 month. A Portuguese student only registers and gets her EU certificate.",
     "tram.cards.titulo": "Select the procedure you need",
-    
+    "tram.visados": "Visas",
+    "tram.visados.desc": "Information about the student visa.",
+    "tram.nie": "NIE",
+    "tram.nie.desc": "The number that identifies you in Spain.",
+    "tram.tie": "TIE",
+    "tram.tie.desc": "The physical residence card.",
+    "tram.emp": "Registration",
+    "tram.emp.desc": "Registration with the city council.",
+    "tram.mat": "Enrollments",
+    "tram.mat.desc": "Access and enrollment at the university.",
+    "tram.ver": "View guide",
+    "tram.voltar": "Back to Procedures",
+
+    // ===== VISADOS =====
+    "vis.titulo": "Study Visas",
+    "vis.sub": "Everything you need to know before traveling to Spain to start your studies.",
+    "vis.oque": "Who needs a visa?",
     "vis.q.ue": "<strong>EU/EEA/Switzerland:</strong> No one. Your ID or passport is enough.",
-    "vis.q.fuera": "<strong>Outside the EU:</strong> Anyone studying for more than 90 days needs the study stay authorization (Spanish consulate). For courses under 90 days, you only need a Schengen visa if your nationality requires it.",
+    "vis.q.fuera": "<strong>Outside the EU:</strong> Anyone studying for more than 90 days needs the study stay authorization from the Spanish consulate. For courses under 90 days, you only need a Schengen visa if your nationality requires it.",
     "vis.novedad": "<strong>2025 Update:</strong> If you are already in Spain regularly and will do higher studies, in some cases you can request authorization without returning to your country.",
     "vis.req.titulo": "Usual requirements",
     "vis.req.1": "Valid passport (minimum 1 year).",
@@ -111,14 +134,24 @@ en: {
     "vis.perm.4": "<strong>After:</strong> You can apply for residence to look for a job or start a business.",
     "vis.ees.titulo": "Traveling to Europe: EES and ETIAS",
     "vis.ees.p1": "From April 10, 2026, the Entry/Exit System (EES) registers photos and fingerprints at borders. ETIAS is not yet operational.",
-    
+    "vis.importante.p": "Requirements may vary by consulate. Always check the official website of the Spanish Embassy in your country.",
+
+    // ===== NIE =====
+    "nie.titulo": "NIE (Foreigner Identity Number)",
+    "nie.sub": "The number that will officially identify you during your stay in Spain.",
+    "nie.oque": "What is it and what is it for?",
+    "nie.oque.p": "The NIE is a personal and unique number (format X-1234567-A) that identifies you before the Administration. It is requested to open a bank account, sign a rental or mobile contract, enroll, work or pay taxes.",
     "nie.como": "How is it obtained based on your nationality?",
     "nie.como.ue": "<strong>EU/EEA/Switzerland:</strong> Assigned when you register as an EU citizen. It appears on your registration certificate.",
     "nie.como.fuera": "<strong>Outside the EU with study stay:</strong> It appears on your TIE.",
     "nie.como.corta": "<strong>Short stays (up to 90 days):</strong> You can request a NIE if you have an economic, professional or social reason (form EX-15 and fee 790-012).",
     "nie.cita": "How to book an appointment",
     "nie.cita.p": "The Immigration appointment is free. Book it on the Public Administrations electronic site: choose the province of Seville and the National Police procedure. The fee is only paid to the Administration (form 790), never to intermediaries.",
-    
+    "nie.tenha.p": "The NIE is not a physical document, but a number. Keep it safe: it will be requested in almost all procedures of your academic and daily life in Seville.",
+
+    // ===== TIE =====
+    "tie.titulo": "TIE (Foreigner Identity Card)",
+    "tie.sub": "The physical document that proves your legal residence in Spain.",
     "tie.quem": "Who must apply?",
     "tie.quem.p": "Non-EU citizens with a study stay authorization longer than 6 months. EU citizens do not apply for a TIE: they have their registration certificate.",
     "tie.solicitud": "First application",
@@ -134,18 +167,30 @@ en: {
     "tie.ue.1": "<strong>When:</strong> Mandatory if you stay more than 3 months; request it within 3 months of entry.",
     "tie.ue.2": "<strong>Where:</strong> Immigration Office or police station.",
     "tie.ue.3": "<strong>What to bring:</strong> Form EX-18, passport, enrollment, insurance and fee 790-012.",
-    
+    "tie.diff": "Difference between NIE and TIE",
+    "tie.diff.p": "The NIE is just an identification number (which you can have on paper), while the TIE is the physical plastic card with your photo that you carry in your wallet.",
+
+    // ===== EMPADRONAMIENTO =====
+    "emp.titulo": "Registration (Empadronamiento)",
+    "emp.sub": "The municipal registration that makes you an official resident of Seville.",
+    "emp.oque": "What is it and what is it for?",
+    "emp.oque.p": "It is the registration in the municipal register. Every person living in Spain is obliged to register in the municipality where they usually reside. It proves your residence and address. It is useful for accessing public services (such as healthcare), for some university and immigration procedures.",
+    "emp.como": "How to do it in Seville",
+    "emp.como.p": "Registration and change of address are done by appointment (010 or sevilla.org). It is resolved within a maximum of 3 months from the request.",
+    "emp.como.doc.titulo": "Documentation:",
+    "emp.como.doc.1": "Completed and signed registration form.",
+    "emp.como.doc.2": "Identity: EU (registration certificate + ID/passport) or Non-EU (TIE or passport).",
+    "emp.como.doc.3": "Housing: valid lease with last receipt, or property title. In shared flats, authorization from a registered person or owner is required.",
     "emp.manter": "Keeping it up to date",
     "emp.manter.1": "<strong>Outside the EU:</strong> Renewed every 2 years; if you don't, you are removed.",
     "emp.manter.2": "<strong>EU:</strong> Periodic confirmation every 5 years.",
     "emp.manter.3": "<strong>Moving house:</strong> Notify with an appointment.",
     "emp.manter.4": "<strong>Leaving Seville:</strong> Request cancellation.",
     "emp.aviso": "Request the registration certificate when needed (many entities only accept recent ones). Registering with a fake address can cause legal problems.",
-    "emp.como.doc.titulo": "Documentation:",
-    "emp.como.doc.1": "Completed and signed registration form.",
-    "emp.como.doc.2": "Identity: EU (registration certificate + ID/passport) or Non-EU (TIE or passport).",
-    "emp.como.doc.3": "Housing: valid lease with last receipt, or property title. In shared flats, authorization from a registered person or owner is required.",
-    
+
+    // ===== MATRICULAS =====
+    "mat.titulo": "Academic Enrollments",
+    "mat.sub": "Everything about your enrollment in universities and schools in Seville.",
     "mat.acesso": "How do you access based on your origin?",
     "mat.acesso.1": "<strong>EU/EEA High School:</strong> With your diploma, meeting your country's requirements.",
     "mat.acesso.2": "<strong>High School with agreement:</strong> Same as above.",
@@ -164,6 +209,7 @@ en: {
     "mat.docs": "Documents from other countries",
     "mat.docs.1": "Legalized or apostilled degrees and officially translated if not in Spanish.",
     "mat.docs.2": "Homologation (Ministry of Education): it is a long process, start as soon as possible.",
+    "mat.nota.p": "Requirements may change. This guide is indicative: always check official sources.",
 
     // ===== SEGURIDAD =====
     "seg.titulo": "Safety in Seville",
@@ -201,13 +247,11 @@ en: {
     "cont.email.p2": "If you need information about our project, want to share an experience, or have found content we should update, you can contact us via email. We are here to keep improving Conecta Sevilla for all international students.",
     "cont.email.p3": "Your opinion also helps build our community!",
     "cont.email.btn": "Send E-mail",
-    
     "cont.whatsapp": "WhatsApp Community",
     "cont.whatsapp.p1": "The experience of studying in another country is much better when you can share it!",
     "cont.whatsapp.p2": "Join our WhatsApp group to connect with other international and local students, solve doubts in real time, exchange recommendations and stay up to date with the news.",
     "cont.whatsapp.p3": "This is your space to share experiences, help other students and make new friends in Seville.",
     "cont.whatsapp.btn": "Join the Group",
-
     "cont.instagram": "Instagram",
     "cont.instagram.p1": "Follow us to always stay connected!",
     "cont.instagram.p2": "On our Instagram we publish useful tips, news, information of interest and content related to life in Seville.",
@@ -284,7 +328,15 @@ es: {
     "pod.sub": "Muy pronto, el espacio donde compartiremos noticias y consejos para tu vida en Sevilla.",
     "pod.soon": "¡Estamos preparando algo genial!",
     "pod.desc": "Nuestro blog de noticias está en construcción. Pronto tendrás acceso a novedades, guías y los mejores consejos para tu día a día en Sevilla.",
-    // NOVAS CHAVES - ESPANHOL
+
+    // ===== TRAMITES =====
+    "tram.titulo": "Trámites en Sevilla",
+    "tram.sub": "La burocracia puede ser complicada, pero estamos aquí para simplificarla.",
+    "tram.antes.titulo": "Antes de empezar: ¿de dónde eres?",
+    "tram.antes.p1": "Todo cambia según tu nacionalidad. Hay tres situaciones:",
+    "tram.antes.l1": "<strong>UE / EEE / Suiza:</strong> Tienes libertad de circulación. No necesitas visado, pero sí registrarte si te quedas más de 3 meses.",
+    "tram.antes.l2": "<strong>Fuera de la UE, con exención de visado:</strong> Puedes entrar sin visado hasta 90 días, pero para estudiar más de 90 días necesitas una autorización.",
+    "tram.antes.l3": "<strong>Fuera de la UE, con visado obligatorio:</strong> Necesitas visado desde el primer día.",
     "tram.tabela.titulo": "Cuadro comparativo",
     "tram.tab.col1": "Trámite",
     "tram.tab.col2": "UE / EEE / Suiza",
@@ -301,7 +353,25 @@ es: {
     "tram.tab.emp": "Empadronamiento",
     "tram.tab.emp.ue": "Obligatorio si vives aquí",
     "tram.tab.emp.fuera": "Obligatorio si vives aquí",
+    "tram.exemplo": "<strong>Ejemplo:</strong> Una estudiante brasileña pide la autorización en el consulado antes de viajar. Al llegar, se empadrona y solicita su TIE en 1 mes. Una portuguesa solo se empadrona y registra su certificado UE.",
     "tram.cards.titulo": "Selecciona el trámite que necesitas",
+    "tram.visados": "Visados",
+    "tram.visados.desc": "Información sobre el visado de estudios.",
+    "tram.nie": "NIE",
+    "tram.nie.desc": "El número que te identifica en España.",
+    "tram.tie": "TIE",
+    "tram.tie.desc": "La tarjeta física de residencia.",
+    "tram.emp": "Empadronamiento",
+    "tram.emp.desc": "El registro en el ayuntamiento.",
+    "tram.mat": "Matrículas",
+    "tram.mat.desc": "Acceso y matrícula en la universidad.",
+    "tram.ver": "Ver guía",
+    "tram.voltar": "Volver a Trámites",
+
+    // ===== VISADOS =====
+    "vis.titulo": "Visados de Estudio",
+    "vis.sub": "Todo lo que necesitas saber antes de viajar a España para comenzar tus estudios.",
+    "vis.oque": "¿Quién necesita visado?",
     "vis.q.ue": "<strong>UE/EEE/Suiza:</strong> Nadie. Basta con tu DNI o pasaporte.",
     "vis.q.fuera": "<strong>Fuera de la UE:</strong> Quien vaya a estudiar más de 90 días necesita la autorización de estancia por estudios (consulado de España). Para cursos de menos de 90 días, solo necesitarás visado Schengen si tu nacionalidad lo exige.",
     "vis.novedad": "<strong>Novedad 2025:</strong> Si ya estás en España de forma regular y vas a hacer estudios superiores, en algunos casos puedes solicitar la autorización sin volver a tu país.",
@@ -322,14 +392,24 @@ es: {
     "vis.perm.4": "<strong>Después:</strong> Puedes pedir el paso a residencia para búsqueda de empleo o emprendimiento.",
     "vis.ees.titulo": "Viajar a Europa: EES y ETIAS",
     "vis.ees.p1": "Desde el 10 de abril de 2026, el Sistema de Entradas y Salidas (EES) registra foto y huellas en las fronteras. El ETIAS aún no está en funcionamiento.",
-    
+    "vis.importante.p": "Los requisitos pueden variar según el consulado. Consulta siempre la web oficial de la Embajada de España en tu país.",
+
+    // ===== NIE =====
+    "nie.titulo": "NIE (Número de Identidad de Extranjero)",
+    "nie.sub": "El número que te identificará oficialmente durante tu estancia en España.",
+    "nie.oque": "¿Qué es y para qué sirve?",
+    "nie.oque.p": "El NIE es un número personal y único (formato X-1234567-A) que te identifica ante la Administración. Te lo piden para abrir una cuenta bancaria, firmar un contrato de alquiler o de móvil, matricularte, trabajar o pagar impuestos.",
     "nie.como": "¿Cómo se obtiene según tu nacionalidad?",
     "nie.como.ue": "<strong>UE/EEE/Suiza:</strong> Se te asigna al registrarte como ciudadano de la UE. Figura en tu certificado de registro.",
     "nie.como.fuera": "<strong>Fuera de la UE con estancia por estudios:</strong> Figura en tu TIE.",
     "nie.como.corta": "<strong>Estancias cortas (hasta 90 días):</strong> Puedes solicitar un NIE si tienes una razón económica, profesional o social que lo justifique (modelo EX-15 y tasa 790-012).",
     "nie.cita": "Cómo pedir cita",
     "nie.cita.p": "La cita previa de Extranjería es gratuita. Se pide en la sede electrónica de las Administraciones Públicas: elige la provincia de Sevilla y el trámite de Policía Nacional que corresponda. La tasa solo se paga a la Administración (modelo 790), nunca a intermediarios.",
-    
+    "nie.tenha.p": "El NIE no es un documento físico, sino un número. Guárdalo bien: te lo pedirán en casi todos los trámites de tu vida académica y diaria en Sevilla.",
+
+    // ===== TIE =====
+    "tie.titulo": "TIE (Tarjeta de Identidad de Extranjero)",
+    "tie.sub": "El documento físico que acredita tu residencia legal en España.",
     "tie.quem": "¿Quién debe pedirla?",
     "tie.quem.p": "Las personas de fuera de la UE con autorización de estancia por estudios superior a 6 meses. Las personas de la UE no piden TIE: tienen su certificado de registro.",
     "tie.solicitud": "Primera solicitud",
@@ -345,18 +425,30 @@ es: {
     "tie.ue.1": "<strong>Cuándo:</strong> Obligatorio si te quedas más de 3 meses; solicítalo dentro de los 3 meses desde tu entrada.",
     "tie.ue.2": "<strong>Dónde:</strong> Oficina de Extranjería o comisaría.",
     "tie.ue.3": "<strong>Qué llevar:</strong> Formulario EX-18, pasaporte, matrícula, seguro y tasa 790-012.",
-    
+    "tie.diff": "Diferencia entre NIE y TIE",
+    "tie.diff.p": "El NIE es solo un número de identificación (puede aparecer en un papel). La TIE es la tarjeta física con tu foto que llevas en la cartera.",
+
+    // ===== EMPADRONAMIENTO =====
+    "emp.titulo": "Empadronamiento",
+    "emp.sub": "El registro municipal que te convierte en vecino oficial de Sevilla.",
+    "emp.oque": "¿Qué es y para qué sirve?",
+    "emp.oque.p": "Es la inscripción en el padrón municipal. Toda persona que vive en España está obligada a inscribirse en el municipio donde reside habitualmente. Prueba tu residencia y domicilio. Te sirve para acceder a servicios públicos (como la sanidad), para algunos trámites universitarios y de extranjería.",
+    "emp.como": "Cómo hacerlo en Sevilla",
+    "emp.como.p": "El alta y el cambio de domicilio se hacen con cita previa (en el 010 o en sevilla.org). Se resuelve como máximo en 3 meses desde la solicitud.",
+    "emp.como.doc.titulo": "Documentación:",
+    "emp.como.doc.1": "Hoja padronal rellena y firmada.",
+    "emp.como.doc.2": "Identidad: UE (certificado de registro + DNI/pasaporte) o Fuera de la UE (TIE o pasaporte).",
+    "emp.como.doc.3": "Vivienda: contrato de alquiler vigente con el último recibo, o título de propiedad. En piso compartido, se necesita autorización de alguien empadronado o del propietario.",
     "emp.manter": "Mantenerlo al día",
     "emp.manter.1": "<strong>Fuera de la UE:</strong> Se renueva cada 2 años; si no lo haces, se da de baja.",
     "emp.manter.2": "<strong>UE:</strong> Confirmación periódica cada 5 años.",
     "emp.manter.3": "<strong>Cambio de casa:</strong> Comunícalo con cita.",
     "emp.manter.4": "<strong>Te vas de Sevilla:</strong> Pide la baja.",
     "emp.aviso": "Pide el certificado o volante de empadronamiento cuando lo necesites (muchas entidades lo aceptan solo si es reciente). Empadronarte con un domicilio falso puede acarrearte problemas legales.",
-    "emp.como.doc.titulo": "Documentación:",
-    "emp.como.doc.1": "Hoja padronal rellena y firmada.",
-    "emp.como.doc.2": "Identidad: UE (certificado de registro + DNI/pasaporte) o Fuera de la UE (TIE o pasaporte).",
-    "emp.como.doc.3": "Vivienda: contrato de alquiler vigente con el último recibo, o título de propiedad. En piso compartido, se necesita autorización de alguien empadronado o del propietario.",
-    
+
+    // ===== MATRICULAS =====
+    "mat.titulo": "Matrículas Académicas",
+    "mat.sub": "Todo sobre tu inscripción en universidades y escuelas de Sevilla.",
     "mat.acesso": "¿Cómo accedes según tu origen?",
     "mat.acesso.1": "<strong>Bachillerato UE/EEE:</strong> Con tu título, cumpliendo los requisitos de tu país.",
     "mat.acesso.2": "<strong>Bachillerato con convenio:</strong> Igual que lo anterior.",
@@ -375,7 +467,9 @@ es: {
     "mat.docs": "Documentos de otros países",
     "mat.docs.1": "Títulos legalizados o apostillados y traducidos oficialmente si no están en español.",
     "mat.docs.2": "Homologación (Ministerio de Educación): es un trámite largo, empieza cuanto antes.",
+    "mat.nota.p": "Los requisitos pueden cambiar. Esta guía es orientativa: contrasta siempre con las fuentes oficiales.",
 
+    // ===== SEGURIDAD =====
     "seg.titulo": "Seguridad en Sevilla",
     "seg.sub": "Información práctica y consejos para que disfrutes de la ciudad con tranquilidad y seguridad.",
     "seg.submenu.1": "Contactos de emergencia",
@@ -411,13 +505,11 @@ es: {
     "cont.email.p2": "Si necesitas información sobre nuestro proyecto, quieres compartir una experiencia o has encontrado algún contenido que deberíamos actualizar, puedes ponerte en contacto con nosotros a través del correo electrónico. Estamos aquí para seguir mejorando Conecta Sevilla para todos los estudiantes internacionales.",
     "cont.email.p3": "¡Tu opinión también ayuda a construir nuestra comunidad!",
     "cont.email.btn": "Enviar E-mail",
-    
     "cont.whatsapp": "Comunidad WhatsApp",
     "cont.whatsapp.p1": "¡La experiencia de estudiar en otro país es mucho mejor cuando puedes compartirla!",
     "cont.whatsapp.p2": "Únete a nuestro grupo de WhatsApp para conectar con otros estudiantes internacionales y locales, resolver dudas en tiempo real, intercambiar recomendaciones y estar al tanto de las novedades.",
     "cont.whatsapp.p3": "Este es tu espacio para compartir experiencias, ayudar a otros estudiantes y hacer nuevos amigos en Sevilla.",
     "cont.whatsapp.btn": "Entrar al Grupo",
-
     "cont.instagram": "Instagram",
     "cont.instagram.p1": "¡Síguenos para estar siempre conectado!",
     "cont.instagram.p2": "En nuestro Instagram publicamos consejos útiles, novedades, información de interés y contenidos relacionados con la vida en Sevilla.",
@@ -494,7 +586,15 @@ pt: {
     "pod.sub": "Em breve, o espaço onde compartilharemos notícias e dicas para sua vida em Sevilla.",
     "pod.soon": "Estamos preparando algo incrível!",
     "pod.desc": "Nosso blog de notícias está em construção. Em breve você terá acesso a novidades, guias e as melhores dicas para o seu dia a dia em Sevilla.",
-    // NOVAS CHAVES - PORTUGUÊS
+
+    // ===== TRAMITES =====
+    "tram.titulo": "Trâmites em Sevilla",
+    "tram.sub": "A burocracia pode ser complicada, mas estamos aqui para simplificá-la.",
+    "tram.antes.titulo": "Antes de começar: de onde você é?",
+    "tram.antes.p1": "Tudo muda de acordo com a sua nacionalidade. Existem três situações:",
+    "tram.antes.l1": "<strong>UE / EEE / Suíça:</strong> Você tem liberdade de circulação. Não precisa de visto, mas precisa se registrar se ficar mais de 3 meses.",
+    "tram.antes.l2": "<strong>Fora da UE, com isenção de visto:</strong> Você pode entrar sem visto por até 90 dias, mas para estudar mais de 90 dias precisa de uma autorização.",
+    "tram.antes.l3": "<strong>Fora da UE, com visto obrigatório:</strong> Você precisa de visto desde o primeiro dia.",
     "tram.tabela.titulo": "Quadro comparativo",
     "tram.tab.col1": "Trâmite",
     "tram.tab.col2": "UE / EEE / Suíça",
@@ -511,8 +611,25 @@ pt: {
     "tram.tab.emp": "Empadronamiento",
     "tram.tab.emp.ue": "Obrigatório se mora aqui",
     "tram.tab.emp.fuera": "Obrigatório se mora aqui",
+    "tram.exemplo": "<strong>Exemplo:</strong> Uma estudante brasileira pede a autorização no consulado antes de viajar. Ao chegar, faz o empadronamiento e solicita o TIE em 1 mês. Uma portuguesa apenas se empadrona e registra seu certificado UE.",
     "tram.cards.titulo": "Selecione o trâmite que você precisa",
-    
+    "tram.visados": "Vistos",
+    "tram.visados.desc": "Informações sobre o visto de estudos.",
+    "tram.nie": "NIE",
+    "tram.nie.desc": "O número que identifica você na Espanha.",
+    "tram.tie": "TIE",
+    "tram.tie.desc": "O cartão físico de residência.",
+    "tram.emp": "Empadronamiento",
+    "tram.emp.desc": "O registro na prefeitura.",
+    "tram.mat": "Matrículas",
+    "tram.mat.desc": "Acesso e matrícula na universidade.",
+    "tram.ver": "Ver guia",
+    "tram.voltar": "Voltar aos Trâmites",
+
+    // ===== VISADOS =====
+    "vis.titulo": "Vistos de Estudo",
+    "vis.sub": "Tudo o que você precisa saber antes de viajar para a Espanha para começar seus estudos.",
+    "vis.oque": "Quem precisa de visto?",
     "vis.q.ue": "<strong>UE/EEE/Suíça:</strong> Ninguém. Basta o documento de identidade ou passaporte.",
     "vis.q.fuera": "<strong>Fora da UE:</strong> Quem for estudar mais de 90 dias precisa da autorização de estadia por estudos (consulado da Espanha). Para cursos de menos de 90 dias, só precisará de visto Schengen se a sua nacionalidade exigir.",
     "vis.novedad": "<strong>Novidade 2025:</strong> Se você já está na Espanha regularmente e vai fazer estudos superiores, em alguns casos pode solicitar a autorização sem voltar ao seu país.",
@@ -533,14 +650,24 @@ pt: {
     "vis.perm.4": "<strong>Depois:</strong> Você pode pedir a mudança para residência para buscar emprego ou empreender.",
     "vis.ees.titulo": "Viajar para a Europa: EES e ETIAS",
     "vis.ees.p1": "Desde 10 de abril de 2026, o Sistema de Entradas e Saídas (EES) registra foto e impressões digitais nas fronteiras. O ETIAS ainda não está em funcionamento.",
-    
+    "vis.importante.p": "Os requisitos podem variar de acordo com o consulado. Consulte sempre o site oficial da Embaixada da Espanha no seu país.",
+
+    // ===== NIE =====
+    "nie.titulo": "NIE (Número de Identidade de Estrangeiro)",
+    "nie.sub": "O número que o identificará oficialmente durante a sua estadia na Espanha.",
+    "nie.oque": "O que é e para que serve?",
+    "nie.oque.p": "O NIE é um número pessoal e único (formato X-1234567-A) que identifica você perante a Administração. É solicitado para abrir conta bancária, assinar contrato de aluguel ou de celular, matricular-se, trabalhar ou pagar impostos.",
     "nie.como": "Como é obtido de acordo com a sua nacionalidade?",
     "nie.como.ue": "<strong>UE/EEE/Suíça:</strong> É atribuído ao se registrar como cidadão da UE. Consta no seu certificado de registro.",
     "nie.como.fuera": "<strong>Fora da UE com estadia por estudos:</strong> Consta no seu TIE.",
     "nie.como.corta": "<strong>Estadias curtas (até 90 dias):</strong> Você pode solicitar um NIE se tiver uma razão econômica, profissional ou social (formulário EX-15 e taxa 790-012).",
     "nie.cita": "Como marcar hora",
     "nie.cita.p": "A marcação de hora de Estrangeiros é gratuita. Marque no site eletrônico das Administrações Públicas: escolha a província de Sevilha e o trâmite da Polícia Nacional. A taxa só é paga à Administração (modelo 790), nunca a intermediários.",
-    
+    "nie.tenha.p": "O NIE não é um documento físico, mas um número. Guarde-o bem: ele será solicitado em quase todos os trâmites da sua vida acadêmica e diária em Sevilla.",
+
+    // ===== TIE =====
+    "tie.titulo": "TIE (Cartão de Identidade de Estrangeiro)",
+    "tie.sub": "O documento físico que comprova sua residência legal na Espanha.",
     "tie.quem": "Quem deve solicitar?",
     "tie.quem.p": "Pessoas de fora da UE com autorização de estadia por estudos superior a 6 meses. Cidadãos da UE não solicitam TIE: têm o certificado de registro.",
     "tie.solicitud": "Primeira solicitação",
@@ -556,18 +683,30 @@ pt: {
     "tie.ue.1": "<strong>Quando:</strong> Obrigatório se ficar mais de 3 meses; solicite dentro de 3 meses desde a entrada.",
     "tie.ue.2": "<strong>Onde:</strong> Escritório de Estrangeiros ou delegacia.",
     "tie.ue.3": "<strong>O que levar:</strong> Formulário EX-18, passaporte, matrícula, seguro e taxa 790-012.",
-    
+    "tie.diff": "Diferença entre NIE e TIE",
+    "tie.diff.p": "O NIE é apenas um número de identificação (que você pode ter em um papel), enquanto o TIE é o cartão físico de plástico com sua foto que você leva na carteira.",
+
+    // ===== EMPADRONAMIENTO =====
+    "emp.titulo": "Empadronamiento",
+    "emp.sub": "O registro municipal que torna você um residente oficial de Sevilla.",
+    "emp.oque": "O que é e para que serve?",
+    "emp.oque.p": "É a inscrição no registro municipal. Toda pessoa que vive na Espanha é obrigada a se inscrever no município onde reside habitualmente. Comprova sua residência e endereço. Serve para acessar serviços públicos (como saúde) e para alguns trâmites universitários e de imigração.",
+    "emp.como": "Como fazer em Sevilla",
+    "emp.como.p": "O registro e a mudança de endereço são feitos com hora marcada (010 ou sevilla.org). É resolvido no prazo máximo de 3 meses a partir do pedido.",
+    "emp.como.doc.titulo": "Documentação:",
+    "emp.como.doc.1": "Formulário de registro preenchido e assinado.",
+    "emp.como.doc.2": "Identidade: UE (certificado de registro + RG/passaporte) ou Fora da UE (TIE ou passaporte).",
+    "emp.como.doc.3": "Moradia: contrato de aluguel válido com o último recibo, ou escritura. Em apartamentos compartilhados, é necessária autorização de uma pessoa registrada ou do proprietário.",
     "emp.manter": "Mantendo em dia",
     "emp.manter.1": "<strong>Fora da UE:</strong> Renovado a cada 2 anos; se não o fizer, é removido.",
     "emp.manter.2": "<strong>UE:</strong> Confirmação periódica a cada 5 anos.",
     "emp.manter.3": "<strong>Mudança de casa:</strong> Comunique com hora marcada.",
     "emp.manter.4": "<strong>Saindo de Sevilha:</strong> Solicite o cancelamento.",
     "emp.aviso": "Solicite o certificado de empadronamiento quando necessário (muitas entidades só aceitam recentes). Registrar-se com um endereço falso pode causar problemas legais.",
-    "emp.como.doc.titulo": "Documentação:",
-    "emp.como.doc.1": "Formulário de registro preenchido e assinado.",
-    "emp.como.doc.2": "Identidade: UE (certificado de registro + RG/passaporte) ou Fora da UE (TIE ou passaporte).",
-    "emp.como.doc.3": "Moradia: contrato de aluguel válido com o último recibo, ou escritura. Em apartamentos compartilhados, é necessária autorização de uma pessoa registrada ou do proprietário.",
-    
+
+    // ===== MATRICULAS =====
+    "mat.titulo": "Matrículas Acadêmicas",
+    "mat.sub": "Tudo sobre a sua inscrição em universidades e escolas de Sevilla.",
     "mat.acesso": "Como você acessa de acordo com a sua origem?",
     "mat.acesso.1": "<strong>Ensino Médio UE/EEE:</strong> Com o seu diploma, cumprindo os requisitos do seu país.",
     "mat.acesso.2": "<strong>Ensino Médio com convênio:</strong> Igual ao anterior.",
@@ -586,6 +725,9 @@ pt: {
     "mat.docs": "Documentos de outros países",
     "mat.docs.1": "Diplomas legalizados ou apostilados e traduzidos oficialmente se não estiverem em espanhol.",
     "mat.docs.2": "Homologação (Ministério da Educação): é um processo longo, comece o quanto antes.",
+    "mat.nota.p": "Os requisitos podem mudar. Este guia é orientativo: consulte sempre as fontes oficiais.",
+
+    // ===== SEGURIDAD =====
     "seg.titulo": "Segurança em Sevilla",
     "seg.sub": "Informações práticas e dicas para você aproveitar a cidade com tranquilidade e segurança.",
     "seg.submenu.1": "Contatos de emergência",
@@ -621,13 +763,11 @@ pt: {
     "cont.email.p2": "Se precisar de informações sobre nosso projeto, quiser compartilhar uma experiência ou tiver encontrado algum conteúdo que devamos atualizar, você pode entrar em contato conosco por e-mail. Estamos aqui para continuar melhorando a Conecta Sevilla para todos os estudantes internacionais.",
     "cont.email.p3": "Sua opinião também ajuda a construir nossa comunidade!",
     "cont.email.btn": "Enviar E-mail",
-    
     "cont.whatsapp": "Comunidade WhatsApp",
     "cont.whatsapp.p1": "A experiência de estudar em outro país é muito melhor quando você pode compartilhá-la!",
     "cont.whatsapp.p2": "Junte-se ao nosso grupo de WhatsApp para conectar com outros estudantes internacionais e locais, resolver dúvidas em tempo real, trocar recomendações e ficar por dentro das novidades.",
     "cont.whatsapp.p3": "Este é o seu espaço para compartilhar experiências, ajudar outros estudantes e fazer novos amigos em Sevilla.",
     "cont.whatsapp.btn": "Entrar no Grupo",
-
     "cont.instagram": "Instagram",
     "cont.instagram.p1": "Siga-nos para estar sempre conectado!",
     "cont.instagram.p2": "No nosso Instagram publicamos dicas úteis, novidades, informações de interesse e conteúdos relacionados à vida em Sevilla.",
