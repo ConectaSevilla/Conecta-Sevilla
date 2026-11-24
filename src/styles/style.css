@@ -680,7 +680,7 @@ header {
 
 @media screen and (max-width: 900px) {
     .nav-item a.active::after {
-        display: none; /* Remove a linha no mobile para não ficar estranho */
+        display: none;
     }
     .nav-item a.active {
         background-color: rgba(161, 21, 83, 0.1);
@@ -691,13 +691,15 @@ header {
         margin: 0 auto;
     }
 }
+
 #btn-topo.visivel {
     opacity: 1 !important;
     visibility: visible !important;
     transform: translateY(0) !important;
 }
+
 /* ============================================================
-   BOTÃO VOLTAR (Histórico)
+   BOTÃO VOLTAR (Histórico / Páginas Internas)
    ============================================================ */
 .btn-voltar {
     display: inline-flex;
@@ -721,30 +723,45 @@ header {
     color: white;
 }
 
-/* No mobile, ajusta o tamanho */
 @media screen and (max-width: 900px) {
     .btn-voltar {
         font-size: 14px;
         padding: 8px 16px;
     }
 }
-.btn-voltar {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    background-color: transparent;
-    color: #a11553;
-    padding: 8px 16px;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 14px;
-    border-radius: 50px;
-    border: 2px solid #a11553;
+
+/* ============================================================
+   TABELA COMPARATIVA (Página de Trâmites)
+   ============================================================ */
+.tabela-responsiva {
+    overflow-x: auto;
     margin-bottom: 20px;
-    transition: 0.3s;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    border-radius: 10px;
 }
 
-.btn-voltar:hover {
+.tabela-tramites {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    min-width: 600px; /* Força rolagem no celular se a tela for pequena */
+}
+
+.tabela-tramites th,
+.tabela-tramites td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #eaeaea;
+    font-size: 16px;
+    color: #353535;
+}
+
+.tabela-tramites th {
     background-color: #a11553;
     color: white;
+    font-weight: 600;
+}
+
+.tabela-tramites tr:hover {
+    background-color: #faf7f2;
 }
