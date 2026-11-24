@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-i18n="tram.titulo">Trámites - Conecta Sevilla</title>
-    <link rel="stylesheet" href="src/styles/style.css">
+    <title data-i18n="tram.titulo">Procedures - Conecta Sevilla</title>
+    <link rel="stylesheet" href="src/styles/style.css?v=5">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -38,22 +38,72 @@
     </header>
 
     <section class="pagina-header">
-          <div style="margin-bottom: 20px;">
-          <a href="#" onclick="voltarPagina(event)" class="btn-voltar">
-    <i class="fa-solid fa-arrow-left"></i> <span data-i18n="nav.voltar">Voltar</span>
-</a>
-        </div>
         <h1 data-i18n="tram.titulo">Trámites en Sevilla</h1>
-        <p data-i18n="tram.sub">La burocracia puede ser complicada, pero estamos aquí para simplificarla. Selecciona el trámite que necesitas resolver.</p>
+        <p data-i18n="tram.sub">La burocracia puede ser complicada, pero estamos aquí para simplificarla.</p>
     </section>
 
-    <section class="areas">
+    <section class="pagina-conteudo">
+        <!-- QUADRO COMPARATIVO INICIAL -->
+        <div class="bloco-conteudo" style="margin-top: 0;">
+            <h2 data-i18n="tram.antes.titulo">Antes de empezar: ¿de dónde eres?</h2>
+            <p data-i18n="tram.antes.p1">Todo cambia según tu nacionalidad. Hay tres situaciones:</p>
+            <ul style="margin-left: 20px; margin-bottom: 20px; font-size: 18px; line-height: 1.8; color: #353535;">
+                <li data-i18n="tram.antes.l1"><strong>UE / EEE / Suiza:</strong> Tienes libertad de circulación. No necesitas visado, pero sí registrarte si te quedas más de 3 meses.</li>
+                <li data-i18n="tram.antes.l2"><strong>Fuera de la UE, con exención de visado:</strong> Puedes entrar sin visado hasta 90 días, pero para estudiar más de 90 días necesitas una autorización.</li>
+                <li data-i18n="tram.antes.l3"><strong>Fuera de la UE, con visado obligatorio:</strong> Necesitas visado desde el primer día.</li>
+            </ul>
+        </div>
+
+        <div class="bloco-conteudo">
+            <h2 data-i18n="tram.tabela.titulo">Cuadro comparativo</h2>
+            <div class="tabela-responsiva">
+                <table class="tabela-tramites">
+                    <thead>
+                        <tr>
+                            <th data-i18n="tram.tab.col1">Trámite</th>
+                            <th data-i18n="tram.tab.col2">UE / EEE / Suiza</th>
+                            <th data-i18n="tram.tab.col3">Fuera de la UE</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-i18n="tram.tab.visado">Visado</td>
+                            <td data-i18n="tram.tab.visado.ue">No</td>
+                            <td data-i18n="tram.tab.visado.fuera">Sí, si estudias > 90 días</td>
+                        </tr>
+                        <tr>
+                            <td data-i18n="tram.tab.doc">Documento residencia</td>
+                            <td data-i18n="tram.tab.doc.ue">Certificado de ciudadano UE</td>
+                            <td data-i18n="tram.tab.doc.fuera">TIE (Tarjeta Extranjero)</td>
+                        </tr>
+                        <tr>
+                            <td data-i18n="tram.tab.plazo">Plazo registro</td>
+                            <td data-i18n="tram.tab.plazo.ue">Hasta 3 meses</td>
+                            <td data-i18n="tram.tab.plazo.fuera">1 mes desde entrada</td>
+                        </tr>
+                        <tr>
+                            <td data-i18n="tram.tab.emp">Empadronamiento</td>
+                            <td data-i18n="tram.tab.emp.ue">Obligatorio si vives aquí</td>
+                            <td data-i18n="tram.tab.emp.fuera">Obligatorio si vives aquí</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p style="background-color: #f4e9d9; padding: 15px; border-left: 5px solid #a11553; border-radius: 5px; font-weight: 500; margin-top: 20px;">
+                <i class="fa-solid fa-lightbulb" style="color: #a11553; margin-right: 10px;"></i>
+                <span data-i18n="tram.exemplo"><strong>Ejemplo:</strong> Una estudiante brasileña pide la autorización en el consulado antes de viajar. Al llegar, se empadrona y solicita su TIE en 1 mes. Una portuguesa solo se empadrona y registra su certificado UE.</span>
+            </p>
+        </div>
+
+        <!-- CARDS -->
+        <h2 style="text-align: center; margin-top: 60px; margin-bottom: 30px; font-family: 'Times New Roman', serif; font-size: 36px; color: #353535;" data-i18n="tram.cards.titulo">Selecciona el trámite que necesitas</h2>
+        
         <div class="grid-cards">
             <a href="visados.html" class="card-link">
                 <div class="card">
                     <i class="fa-solid fa-passport icone-card"></i>
                     <h3 data-i18n="tram.visados">Visados</h3>
-                    <p data-i18n="tram.visados.desc">Información sobre el visado de estudios, requisitos y renovaciones antes de llegar a España.</p>
+                    <p data-i18n="tram.visados.desc">Información sobre el visado de estudios.</p>
                     <span class="btn-card" data-i18n="tram.ver">Ver guía</span>
                 </div>
             </a>
@@ -61,7 +111,7 @@
                 <div class="card">
                     <i class="fa-solid fa-id-card icone-card"></i>
                     <h3 data-i18n="tram.nie">NIE</h3>
-                    <p data-i18n="tram.nie.desc">Todo sobre el Número de Identidad de Extranjero: cómo pedir cita y qué documentos llevar.</p>
+                    <p data-i18n="tram.nie.desc">El número que te identifica en España.</p>
                     <span class="btn-card" data-i18n="tram.ver">Ver guía</span>
                 </div>
             </a>
@@ -69,7 +119,7 @@
                 <div class="card">
                     <i class="fa-solid fa-address-card icone-card"></i>
                     <h3 data-i18n="tram.tie">TIE</h3>
-                    <p data-i18n="tram.tie.desc">La Tarjeta de Identidad de Extranjero. Aprende a solicitarla y a renovarla paso a paso.</p>
+                    <p data-i18n="tram.tie.desc">La tarjeta física de residencia.</p>
                     <span class="btn-card" data-i18n="tram.ver">Ver guía</span>
                 </div>
             </a>
@@ -77,7 +127,7 @@
                 <div class="card">
                     <i class="fa-solid fa-house-user icone-card"></i>
                     <h3 data-i18n="tram.emp">Empadronamiento</h3>
-                    <p data-i18n="tram.emp.desc">El registro en el ayuntamiento de Sevilla. Esencial para muchos trámites y servicios.</p>
+                    <p data-i18n="tram.emp.desc">El registro en el ayuntamiento.</p>
                     <span class="btn-card" data-i18n="tram.ver">Ver guía</span>
                 </div>
             </a>
@@ -85,16 +135,15 @@
                 <div class="card">
                     <i class="fa-solid fa-graduation-cap icone-card"></i>
                     <h3 data-i18n="tram.mat">Matrículas</h3>
-                    <p data-i18n="tram.mat.desc">Guía para la matrícula en universidades y escuelas de idiomas en la ciudad.</p>
+                    <p data-i18n="tram.mat.desc">Acceso y matrícula en la universidad.</p>
                     <span class="btn-card" data-i18n="tram.ver">Ver guía</span>
                 </div>
             </a>
         </div>
     </section>
 
-
     <button id="btn-topo" aria-label="Voltar ao início"><i class="fa-solid fa-arrow-up"></i></button>
-    <script src="src/javascript/traducoes.js?v=5"></script>
-    <script src="src/javascript/script.js?v=5"></script>
+    <script src="src/javascript/traducoes.js?v=6"></script>
+    <script src="src/javascript/script.js?v=6"></script>
 </body>
 </html>
