@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-i18n="tie.titulo">TIE - Conecta Sevilla</title>
-    <link rel="stylesheet" href="src/styles/style.css">
+    <link rel="stylesheet" href="src/styles/style.css?v=5">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -44,32 +44,53 @@
 
     <section class="pagina-conteudo">
         <div style="margin-bottom: 30px;">
-            <a href="tramites.html" class="btn-card" style="display: inline-block;">
+            <a href="tramites.html" class="btn-voltar">
                 <i class="fa-solid fa-arrow-left"></i> <span data-i18n="tram.voltar">Volver a Trámites</span>
             </a>
         </div>
 
         <div class="bloco-conteudo" style="margin-top: 0;">
-            <h2 data-i18n="tie.oque">¿Qué es la TIE?</h2>
-            <p data-i18n="tie.oque.p">La TIE (Tarjeta de Identidad de Extranjero) es el documento físico que acredita la situación administrativa de las personas extranjeras que tienen autorización para residir en España durante un periodo superior a seis meses, en los casos previstos por la normativa. Para los estudiantes internacionales de fuera de la Unión Europea, este documento es una parte esencial de su estancia en el país.</p>
+            <h2 data-i18n="tie.quem">¿Quién debe pedirla?</h2>
+            <p data-i18n="tie.quem.p">Las personas de fuera de la UE con autorización de estancia por estudios superior a 6 meses. Las personas de la UE no piden TIE: tienen su certificado de registro.</p>
         </div>
 
         <div class="bloco-conteudo">
-            <h2 data-i18n="tie.saber">¿Qué necesitas saber?</h2>
-            <p data-i18n="tie.saber.p">Aquí podrás conocer la diferencia entre el NIE y la TIE, cuándo puede ser necesaria, cómo es su expedición y qué debes tener en cuenta para su renovación.</p>
+            <h2 data-i18n="tie.solicitud">Primera solicitud</h2>
+            <ul style="margin-left: 20px; margin-bottom: 20px; font-size: 18px; line-height: 1.8; color: #353535;">
+                <li data-i18n="tie.solicitud.1"><strong>Plazo:</strong> 1 mes desde tu entrada en España (o desde que la autorización entra en vigor).</li>
+                <li data-i18n="tie.solicitud.2"><strong>Dónde:</strong> Oficina de Extranjería de Sevilla (Policía Nacional). Pide cita en la sede electrónica.</li>
+                <li data-i18n="tie.solicitud.3"><strong>Qué llevar:</strong> Formulario EX-17, tasa 790-012, pasaporte con visado, justificante de matrícula y foto de carné.</li>
+            </ul>
+            <p data-i18n="tie.solicitud.p" style="font-weight: 500;">Después: recibes un resguardo de huellas y recoges la tarjeta pasado aproximadamente un mes. Guarda el resguardo.</p>
+        </div>
+
+        <div class="bloco-conteudo">
+            <h2 data-i18n="tie.renovacao">Renovación</h2>
+            <p data-i18n="tie.renovacao.p1">Puede solicitarse desde 60 días antes de la caducidad y hasta 90 días después. Se presenta en la sede electrónica.</p>
+            <p data-i18n="tie.renovacao.p2">Documentos habituales: formulario EX-00, copia de la autorización anterior, pasaporte, seguro médico, medios económicos, matrícula y tasa 790-052.</p>
+            <p data-i18n="tie.renovacao.p3" style="color: #a11553; font-weight: 500;">Si vas a viajar con la TIE caducada, solicita antes una autorización de regreso.</p>
+        </div>
+
+        <div class="bloco-conteudo">
+            <h2 data-i18n="tie.ue">Si eres de la UE: certificado de registro</h2>
+            <ul style="margin-left: 20px; margin-bottom: 20px; font-size: 18px; line-height: 1.8; color: #353535;">
+                <li data-i18n="tie.ue.1"><strong>Cuándo:</strong> Obligatorio si te quedas más de 3 meses; solicítalo dentro de los 3 meses desde tu entrada.</li>
+                <li data-i18n="tie.ue.2"><strong>Dónde:</strong> Oficina de Extranjería o comisaría.</li>
+                <li data-i18n="tie.ue.3"><strong>Qué llevar:</strong> Formulario EX-18, pasaporte, matrícula, seguro y tasa 790-012.</li>
+            </ul>
         </div>
 
         <div class="bloco-conteudo">
             <h2 data-i18n="tie.diff">Diferencia entre NIE y TIE</h2>
             <p style="background-color: #f4e9d9; padding: 15px; border-left: 5px solid #a11553; border-radius: 5px; font-weight: 500;">
                 <i class="fa-solid fa-id-card" style="color: #a11553; margin-right: 10px;"></i>
-                <span data-i18n="tie.diff.p">El NIE es solo un número de identificación (que puedes tener en un papel), mientras que la TIE es la tarjeta física de plástico con tu foto que llevas en la cartera.</span>
+                <span data-i18n="tie.diff.p">El NIE es solo un número de identificación (puede aparecer en un papel). La TIE es la tarjeta física con tu foto que llevas en la cartera.</span>
             </p>
         </div>
     </section>
 
     <button id="btn-topo" aria-label="Voltar ao início"><i class="fa-solid fa-arrow-up"></i></button>
-    <script src="src/javascript/traducoes.js?v=5"></script>
-    <script src="src/javascript/script.js?v=5"></script>
+    <script src="src/javascript/traducoes.js?v=6"></script>
+    <script src="src/javascript/script.js?v=6"></script>
 </body>
 </html>
