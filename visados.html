@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-i18n="vis.titulo">Visados - Conecta Sevilla</title>
-    <link rel="stylesheet" href="src/styles/style.css">
+    <title data-i18n="vis.titulo">Study Visas - Conecta Sevilla</title>
+    <link rel="stylesheet" href="src/styles/style.css?v=5">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -44,28 +44,59 @@
 
     <section class="pagina-conteudo">
         <div style="margin-bottom: 30px;">
-            <a href="tramites.html" class="btn-card" style="display: inline-block;">
+            <a href="tramites.html" class="btn-voltar">
                 <i class="fa-solid fa-arrow-left"></i> <span data-i18n="tram.voltar">Volver a Trámites</span>
             </a>
         </div>
 
         <div class="bloco-conteudo" style="margin-top: 0;">
-            <h2 data-i18n="vis.oque">¿Necesitas un visado?</h2>
-            <p data-i18n="vis.oque.p1">¿Necesitas un visado para estudiar en España? Aquí encontrarás las principales informaciones para comprender los requisitos y los procedimientos relacionados con el visado de estudiante.</p>
-            <p data-i18n="vis.oque.p2">Te orientamos sobre los aspectos que debes tener en cuenta antes de viajar, la documentación que puede ser necesaria presentar en la embajada de España y dónde consultar los requisitos oficiales según tu país de origen.</p>
+            <h2 data-i18n="vis.oque">¿Quién necesita visado?</h2>
+            <ul style="margin-left: 20px; margin-bottom: 20px; font-size: 18px; line-height: 1.8; color: #353535;">
+                <li data-i18n="vis.q.ue"><strong>UE/EEE/Suiza:</strong> Nadie. Basta con tu DNI o pasaporte.</li>
+                <li data-i18n="vis.q.fuera"><strong>Fuera de la UE:</strong> Quien vaya a estudiar más de 90 días necesita la autorización de estancia por estudios (consulado de España). Para cursos de menos de 90 días, solo necesitarás visado Schengen si tu nacionalidad lo exige.</li>
+            </ul>
+            <p data-i18n="vis.novedad" style="margin-top: 15px; font-weight: 500; color: #a11553;">
+                <strong>Novedad 2025:</strong> Si ya estás en España de forma regular y vas a hacer estudios superiores, en algunos casos puedes solicitar la autorización sin volver a tu país.
+            </p>
         </div>
 
         <div class="bloco-conteudo">
-            <h2 data-i18n="vis.importante">Importante</h2>
-            <p style="background-color: #f4e9d9; padding: 15px; border-left: 5px solid #a11553; border-radius: 5px; font-weight: 500;">
+            <h2 data-i18n="vis.req.titulo">Requisitos habituales</h2>
+            <ul style="margin-left: 20px; margin-bottom: 20px; font-size: 18px; line-height: 1.8; color: #353535;">
+                <li data-i18n="vis.req.1">Pasaporte en vigor (mínimo 1 año).</li>
+                <li data-i18n="vis.req.2">Solicitud con 2 meses de antelación al inicio de los estudios.</li>
+                <li data-i18n="vis.req.3">Carta de admisión con duración total del programa.</li>
+                <li data-i18n="vis.req.4">Matrícula abonada.</li>
+                <li data-i18n="vis.req.5">Seguro médico válido durante toda la estancia.</li>
+                <li data-i18n="vis.req.6">Medios económicos (100% del IPREM mensual, unos 600 €).</li>
+                <li data-i18n="vis.req.7">Certificado de antecedentes penales (si estancia > 6 meses).</li>
+                <li data-i18n="vis.req.8">Certificado médico (si estancia > 6 meses).</li>
+                <li data-i18n="vis.req.9">Traducción oficial si los documentos no están en español.</li>
+            </ul>
+        </div>
+
+        <div class="bloco-conteudo">
+            <h2 data-i18n="vis.permite.titulo">¿Qué te permite la autorización?</h2>
+            <ul style="margin-left: 20px; margin-bottom: 20px; font-size: 18px; line-height: 1.8; color: #353535;">
+                <li data-i18n="vis.perm.1"><strong>Duración:</strong> Cubre toda la duración oficial del programa.</li>
+                <li data-i18n="vis.perm.2"><strong>Trabajo:</strong> Hasta 30 horas semanales (grado, máster, doctorado o FP).</li>
+                <li data-i18n="vis.perm.3"><strong>Familia:</strong> Pueden tramitarse a la vez tu autorización y la de tus familiares.</li>
+                <li data-i18n="vis.perm.4"><strong>Después:</strong> Puedes pedir el paso a residencia para búsqueda de empleo o emprendimiento.</li>
+            </ul>
+        </div>
+
+        <div class="bloco-conteudo">
+            <h2 data-i18n="vis.ees.titulo">Viajar a Europa: EES y ETIAS</h2>
+            <p data-i18n="vis.ees.p1">Desde el 10 de abril de 2026, el Sistema de Entradas y Salidas (EES) registra foto y huellas en las fronteras. El ETIAS aún no está en funcionamiento.</p>
+            <p style="background-color: #f4e9d9; padding: 15px; border-left: 5px solid #a11553; border-radius: 5px; font-weight: 500; margin-top: 20px;">
                 <i class="fa-solid fa-circle-exclamation" style="color: #a11553; margin-right: 10px;"></i>
-                <span data-i18n="vis.importante.p">Los requisitos y procedimientos pueden variar según el consulado de cada país. Consulta siempre la página web oficial de la Embajada de España en tu país de origen antes de iniciar el trámite.</span>
+                <span data-i18n="vis.importante.p">Los requisitos pueden variar según el consulado. Consulta siempre la web oficial de la Embajada de España en tu país.</span>
             </p>
         </div>
     </section>
 
     <button id="btn-topo" aria-label="Voltar ao início"><i class="fa-solid fa-arrow-up"></i></button>
-    <script src="src/javascript/traducoes.js?v=5"></script>
-    <script src="src/javascript/script.js?v=5"></script>
+    <script src="src/javascript/traducoes.js?v=6"></script>
+    <script src="src/javascript/script.js?v=6"></script>
 </body>
 </html>
