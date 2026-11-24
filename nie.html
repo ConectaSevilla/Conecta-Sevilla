@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-i18n="nie.titulo">NIE - Conecta Sevilla</title>
-    <link rel="stylesheet" href="src/styles/style.css">
+    <link rel="stylesheet" href="src/styles/style.css?v=5">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -44,33 +44,37 @@
 
     <section class="pagina-conteudo">
         <div style="margin-bottom: 30px;">
-            <a href="tramites.html" class="btn-card" style="display: inline-block;">
+            <a href="tramites.html" class="btn-voltar">
                 <i class="fa-solid fa-arrow-left"></i> <span data-i18n="tram.voltar">Volver a Trámites</span>
             </a>
         </div>
 
         <div class="bloco-conteudo" style="margin-top: 0;">
-            <h2 data-i18n="nie.oque">¿Qué es el NIE?</h2>
-            <p data-i18n="nie.oque.p">El NIE (Número de Identidad de Extranjero) es un número personal que identifica a las personas extranjeras en España y que se utiliza en diferentes trámites administrativos.</p>
+            <h2 data-i18n="nie.oque">¿Qué es y para qué sirve?</h2>
+            <p data-i18n="nie.oque.p">El NIE es un número personal y único (formato X-1234567-A) que te identifica ante la Administración. Te lo piden para abrir una cuenta bancaria, firmar un contrato de alquiler o de móvil, matricularte, trabajar o pagar impuestos.</p>
         </div>
 
         <div class="bloco-conteudo">
-            <h2 data-i18n="nie.para">¿Para qué sirve?</h2>
-            <p data-i18n="nie.para.p">Si vas a estudiar o vivir en España, es importante conocer para qué sirve, cuándo puedes necesitarlo y cómo informarte sobre su solicitud.</p>
+            <h2 data-i18n="nie.como">¿Cómo se obtiene según tu nacionalidad?</h2>
+            <ul style="margin-left: 20px; margin-bottom: 20px; font-size: 18px; line-height: 1.8; color: #353535;">
+                <li data-i18n="nie.como.ue"><strong>UE/EEE/Suiza:</strong> Se te asigna al registrarte como ciudadano de la UE. Figura en tu certificado de registro.</li>
+                <li data-i18n="nie.como.fuera"><strong>Fuera de la UE con estancia por estudios:</strong> Figura en tu TIE.</li>
+                <li data-i18n="nie.como.corta"><strong>Estancias cortas (hasta 90 días):</strong> Puedes solicitar un NIE si tienes una razón económica, profesional o social que lo justifique (modelo EX-15 y tasa 790-012).</li>
+            </ul>
         </div>
 
         <div class="bloco-conteudo">
-            <h2 data-i18n="nie.tenha">Ten en cuenta</h2>
-            <p style="background-color: #f4e9d9; padding: 15px; border-left: 5px solid #a11553; border-radius: 5px; font-weight: 500;">
+            <h2 data-i18n="nie.cita">Cómo pedir cita</h2>
+            <p data-i18n="nie.cita.p">La cita previa de Extranjería es gratuita. Se pide en la sede electrónica de las Administraciones Públicas: elige la provincia de Sevilla y el trámite de Policía Nacional que corresponda. La tasa solo se paga a la Administración (modelo 790), nunca a intermediarios.</p>
+            <p style="background-color: #f4e9d9; padding: 15px; border-left: 5px solid #a11553; border-radius: 5px; font-weight: 500; margin-top: 20px;">
                 <i class="fa-solid fa-circle-info" style="color: #a11553; margin-right: 10px;"></i>
-                <span data-i18n="nie.tenha.p">Recuerda que el NIE no es un documento físico, sino un número. Asegúrate de guardarlo bien, ya que te lo pedirán en casi todos los trámites de tu vida académica y diaria en Sevilla.</span>
+                <span data-i18n="nie.tenha.p">El NIE no es un documento físico, sino un número. Guárdalo bien: te lo pedirán en casi todos los trámites de tu vida académica y diaria en Sevilla.</span>
             </p>
         </div>
     </section>
 
-
     <button id="btn-topo" aria-label="Voltar ao início"><i class="fa-solid fa-arrow-up"></i></button>
-    <script src="src/javascript/traducoes.js?v=5"></script>
-    <script src="src/javascript/script.js?v=5"></script>
+    <script src="src/javascript/traducoes.js?v=6"></script>
+    <script src="src/javascript/script.js?v=6"></script>
 </body>
 </html>
