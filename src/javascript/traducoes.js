@@ -75,6 +75,7 @@ en: {
     "tram.titulo": "Procedures in Seville",
     "tram.sub": "Bureaucracy can be complicated, but we are here to simplify it.",
     "tram.antes.titulo": "Before you start: where are you from?",
+   "tram.antes.p1": "Everything changes depending on your nationality. There are three situations:",
    "tram.antes.l1": "<strong>EU / EEA / Switzerland:</strong> You have freedom of movement. You don't need a visa, but you do need to register if you stay more than 3 months.",
     "tram.antes.l2": "<strong>Outside the EU, visa-exempt:</strong> You can enter without a visa for up to 90 days, but to study more than 90 days you need a study stay authorization.",
     "tram.antes.l3": "<strong>Outside the EU, visa required:</strong> You need a visa from day one.",
