@@ -738,13 +738,14 @@ header {
     margin-bottom: 20px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.05);
     border-radius: 10px;
+    -webkit-overflow-scrolling: touch; /* Rolagem suave no iOS */
 }
 
 .tabela-tramites {
     width: 100%;
     border-collapse: collapse;
     background-color: white;
-    min-width: 600px; /* Força rolagem no celular se a tela for pequena */
+    min-width: 650px; /* Força a rolagem no celular em vez de esmagar */
 }
 
 .tabela-tramites th,
@@ -754,12 +755,14 @@ header {
     border-bottom: 1px solid #eaeaea;
     font-size: 16px;
     color: #353535;
+    vertical-align: top; /* Alinha o texto no topo da célula */
 }
 
 .tabela-tramites th {
     background-color: #a11553;
     color: white;
     font-weight: 600;
+    white-space: nowrap; /* Evita que o título da coluna quebre no meio */
 }
 
 .tabela-tramites tr:hover {
