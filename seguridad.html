@@ -2,17 +2,17 @@
 <html lang="en">
 <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-EH28HHJZQJ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-EH28HHJZQJ'); 
-</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EH28HHJZQJ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-EH28HHJZQJ'); 
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-i18n="seg.titulo">Seguridad - Conecta Sevilla</title>
-    <link rel="stylesheet" href="src/styles/style.css">
+    <link rel="stylesheet" href="src/styles/style.css?v=15">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -25,7 +25,19 @@
                 <li class="nav-item"><a href="index.html" data-i18n="nav.inicio">Inicio</a></li>
                 <li class="nav-item"><a href="podcast.html" data-i18n="nav.podcast">Noticias</a></li>
                 <li class="nav-item"><a href="tramites.html" data-i18n="nav.tramites">Trámites</a></li>
-                <li class="nav-item"><a href="seguridad.html" class="active" data-i18n="nav.seguridad">Seguridad</a></li>
+                
+                <!-- MENU SUSPENSO DE SEGURANÇA -->
+                <li class="nav-item has-submenu">
+                    <a href="seguridad.html" class="active" data-i18n="nav.seguridad">Seguridad <i class="fa-solid fa-chevron-down" style="font-size: 10px; margin-left: 3px;"></i></a>
+                    <ul class="submenu-dropdown">
+                        <li><a href="seguridad.html#emergencias" data-i18n="seg.submenu.1">Contactos de emergencia</a></li>
+                        <li><a href="seguridad.html#vida-nocturna" data-i18n="seg.submenu.2">Vida nocturna</a></li>
+                        <li><a href="seguridad.html#estafas" data-i18n="seg.submenu.3">Estafas comunes</a></li>
+                        <li><a href="seguridad.html#transporte" data-i18n="seg.submenu.4">Transporte</a></li>
+                        <li><a href="seguridad.html#ambiente" data-i18n="seg.submenu.5">Ambiente seguro</a></li>
+                    </ul>
+                </li>
+
                 <li class="nav-item"><a href="sobre.html" data-i18n="nav.sobre">Sobre el proyecto</a></li>
                 <li class="nav-item"><a href="quienes.html" data-i18n="nav.quem">Quienes Somos</a></li>
             </ul>
@@ -37,7 +49,19 @@
                 <li class="nav-item"><a href="index.html" data-i18n="nav.inicio">Inicio</a></li>
                 <li class="nav-item"><a href="podcast.html" data-i18n="nav.podcast">Noticias</a></li>
                 <li class="nav-item"><a href="tramites.html" data-i18n="nav.tramites">Trámites</a></li>
-                <li class="nav-item"><a href="seguridad.html" data-i18n="nav.seguridad">Seguridad</a></li>
+                
+                <!-- MENU SUSPENSO NO MOBILE -->
+                <li class="nav-item has-submenu">
+                    <a href="seguridad.html" data-i18n="nav.seguridad">Seguridad <i class="fa-solid fa-chevron-down" style="font-size: 10px; margin-left: 3px;"></i></a>
+                    <ul class="submenu-dropdown">
+                        <li><a href="seguridad.html#emergencias" data-i18n="seg.submenu.1">Contactos de emergencia</a></li>
+                        <li><a href="seguridad.html#vida-nocturna" data-i18n="seg.submenu.2">Vida nocturna</a></li>
+                        <li><a href="seguridad.html#estafas" data-i18n="seg.submenu.3">Estafas comunes</a></li>
+                        <li><a href="seguridad.html#transporte" data-i18n="seg.submenu.4">Transporte</a></li>
+                        <li><a href="seguridad.html#ambiente" data-i18n="seg.submenu.5">Ambiente seguro</a></li>
+                    </ul>
+                </li>
+
                 <li class="nav-item"><a href="sobre.html" data-i18n="nav.sobre">Sobre el proyecto</a></li>
                 <li class="nav-item"><a href="quienes.html" data-i18n="nav.quem">Quienes Somos</a></li>
                 <li class="nav-item"><a href="contacto.html" data-i18n="nav.contacto">Contacto</a></li>
@@ -47,11 +71,10 @@
 
     <section class="pagina-header">
         <div style="margin-bottom: 20px;">
-       <a href="#" onclick="voltarPagina(event)" class="btn-voltar">
-    <i class="fa-solid fa-arrow-left"></i> <span data-i18n="nav.voltar">Voltar</span>
-</a>
+            <a href="#" onclick="voltarPagina(event)" class="btn-voltar">
+                <i class="fa-solid fa-arrow-left"></i> <span data-i18n="nav.voltar">Voltar</span>
+            </a>
         </div>
-        
         <h1 data-i18n="seg.titulo">Seguridad en Sevilla</h1>
         <p data-i18n="seg.sub">Información práctica y consejos para que disfrutes de la ciudad con tranquilidad y seguridad.</p>
     </section>
@@ -67,6 +90,26 @@
     <section id="emergencias" class="bloco-conteudo">
         <h2 data-i18n="seg.emerg.titulo">Contactos de emergencia</h2>
         <p data-i18n="seg.emerg.p1">Saber a quién acudir en una situación de emergencia es fundamental, especialmente cuando estás viviendo en una ciudad nueva.</p>
+        
+        <!-- CONTACTOS DE EMERGÊNCIA -->
+        <div class="contactos-emergencia" style="display: flex; gap: 20px; flex-wrap: wrap; margin: 30px 0;">
+            <div style="background: #faf7f2; padding: 20px; border-radius: 10px; flex: 1; min-width: 200px; text-align: center; border: 1px solid #dfd6be;">
+                <i class="fa-solid fa-shield-halved" style="font-size: 30px; color: #a11553; margin-bottom: 10px;"></i>
+                <h3 style="font-size: 18px; margin-bottom: 5px; color: #353535;">Policía Nacional</h3>
+                <p style="font-size: 24px; font-weight: bold; color: #a11553; margin: 0;">091</p>
+            </div>
+            <div style="background: #faf7f2; padding: 20px; border-radius: 10px; flex: 1; min-width: 200px; text-align: center; border: 1px solid #dfd6be;">
+                <i class="fa-solid fa-fire-extinguisher" style="font-size: 30px; color: #a11553; margin-bottom: 10px;"></i>
+                <h3 style="font-size: 18px; margin-bottom: 5px; color: #353535;">Bomberos</h3>
+                <p style="font-size: 24px; font-weight: bold; color: #a11553; margin: 0;">080</p>
+            </div>
+            <div style="background: #faf7f2; padding: 20px; border-radius: 10px; flex: 1; min-width: 200px; text-align: center; border: 1px solid #dfd6be;">
+                <i class="fa-solid fa-phone" style="font-size: 30px; color: #a11553; margin-bottom: 10px;"></i>
+                <h3 style="font-size: 18px; margin-bottom: 5px; color: #353535;">Violencia de Género</h3>
+                <p style="font-size: 24px; font-weight: bold; color: #a11553; margin: 0;">016</p>
+            </div>
+        </div>
+
         <p data-i18n="seg.emerg.p2">En esta sección reunimos información sobre los principales servicios de emergencia y seguridad de Sevilla, para que puedas identificar a quién contactar según la situación. También encontrarás orientación sobre cómo actuar ante una emergencia, qué información proporcionar y dónde buscar ayuda, para que tengas a mano los recursos necesarios para sentirte más seguro durante tu estancia.</p>
     </section>
 
@@ -92,6 +135,12 @@
         <h2 data-i18n="seg.transporte.titulo">Transporte</h2>
         <p data-i18n="seg.transporte.p1">Moverse por una ciudad nueva puede resultar complicado durante los primeros días. Por eso, conocer las opciones de transporte de Sevilla es fundamental para desplazarte con tranquilidad.</p>
         <p data-i18n="seg.transporte.p2">En esta sección encontrarás información sobre los principales medios de transporte público, cómo utilizarlos, las tarjetas disponibles y los descuentos para estudiantes. También compartimos recomendaciones para planificar tus desplazamientos mediante aplicaciones móviles.</p>
+        
+        <div style="margin-top: 20px;">
+            <a href="https://www.tussam.es/es/tarjetas-y-tarifas" target="_blank" class="btn-principal" style="display: inline-flex; align-items: center; gap: 10px;">
+                <i class="fa-solid fa-bus"></i> <span data-i18n="seg.transporte.btn">Ver tarjetas y tarifas de TUSSAM</span>
+            </a>
+        </div>
     </section>
 
     <section id="ambiente" class="bloco-conteudo">
@@ -102,9 +151,7 @@
     </section>
 
     <button id="btn-topo" aria-label="Voltar ao início"><i class="fa-solid fa-arrow-up"></i></button>
-    <script src="src/javascript/traducoes.js?v=5"></script>
-    <script src="src/javascript/script.js?v=5"></script>
-</body>
-</html>
+    <script src="src/javascript/traducoes.js?v=15"></script>
+    <script src="src/javascript/script.js?v=15"></script>
 </body>
 </html>
