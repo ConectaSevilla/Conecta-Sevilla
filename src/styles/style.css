@@ -770,10 +770,12 @@ header {
 }
 
 /* ============================================================
-   MENU SUSPENSO (DROPDOWN) - ESTILO US
+   MENU SUSPENSO (DROPDOWN) - CORRIGIDO
    ============================================================ */
 .has-submenu {
     position: relative;
+    padding-bottom: 20px; /* Cria a "ponte invisível" para o mouse não cair no vazio */
+    margin-bottom: -20px; /* Compensa o padding para não desalinhar o menu */
 }
 
 /* A caixinha do submenu */
@@ -782,14 +784,14 @@ header {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #a11553; /* Cor vinho do seu site */
+    background-color: #a11553;
     min-width: 250px;
     padding: 15px 0;
     list-style: none;
     z-index: 1000;
     box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-    margin-top: 10px;
-    border-radius: 4px;
+    border-radius: 0 0 4px 4px; /* Arredonda só a parte de baixo */
+    /* Removemos o margin-top que causava o buraco */
 }
 
 /* Pequena setinha no topo da caixa */
@@ -817,10 +819,10 @@ header {
 .submenu-dropdown li a {
     padding: 12px 25px !important;
     display: block !important;
-    color: #ffffff !important; /* Texto branco */
+    color: #ffffff !important;
     font-size: 14px !important;
     font-weight: 500 !important;
-    text-transform: uppercase; /* Letras maiúsculas como no exemplo */
+    text-transform: uppercase;
     letter-spacing: 0.5px;
     transition: 0.2s;
     text-decoration: none;
@@ -828,12 +830,11 @@ header {
 
 /* Efeito ao passar o mouse no link */
 .submenu-dropdown li a:hover {
-    background-color: #599d93; /* Verde do seu site */
+    background-color: #599d93;
     color: #ffffff !important;
-    padding-left: 35px !important; /* Efeito de deslocamento */
+    padding-left: 35px !important;
 }
 
-/* Animação de entrada */
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(-10px); }
     to { opacity: 1; transform: translateY(0); }
@@ -848,12 +849,14 @@ header {
         flex-direction: column;
         align-items: center;
         width: 100%;
+        padding-bottom: 0; /* Reseta a ponte invisível no mobile */
+        margin-bottom: 0;
     }
     
     .submenu-dropdown {
         position: static;
         display: block;
-        background-color: transparent; /* No mobile, remove o fundo vinho */
+        background-color: transparent;
         box-shadow: none;
         border-top: none;
         padding: 5px 0;
@@ -864,13 +867,13 @@ header {
     .submenu-dropdown::before { display: none; }
     
     .submenu-dropdown li a {
-        color: #666 !important; /* Texto escuro no mobile */
+        color: #666 !important;
         font-size: 14px !important;
         padding: 8px 15px !important;
         background-color: #faf7f2;
         border-radius: 20px;
         margin-bottom: 5px;
-        text-transform: none; /* Remove o maiúsculo no mobile */
+        text-transform: none;
         display: inline-block !important;
     }
     
