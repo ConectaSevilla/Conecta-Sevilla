@@ -4,7 +4,6 @@ const TRADUCOES = {
    INGLÊS (padrão)
    ========================================================= */
 en: {
-    // ===== NAV / MENU =====
     "nav.inicio": "Home",
     "nav.sobre": "About the Project",
     "nav.quem": "Who We Are",
@@ -14,7 +13,6 @@ en: {
     "nav.contacto": "Contact",
     "nav.voltar": "Back",
 
-    // ===== INDEX =====
     "home.titulo": "Welcome to Seville",
     "home.desc": "Your practical and safe guide to international student life in Seville. Find information on procedures, tips, and community.",
     "home.btn": "Explore the guide",
@@ -30,7 +28,6 @@ en: {
     "home.podcast.desc": "News, tips, and interviews for your daily life.",
     "home.acceder": "Access",
 
-    // ===== SOBRE =====
     "sobre.titulo": "About the Project",
     "sobre.sub": "Discover our story, purpose, and the value we bring to Seville.",
     "sobre.submenu.1": "Our Why",
@@ -53,7 +50,6 @@ en: {
     "sobre.valor.p2": "We also value the experiences of other students, because we believe that the advice of those who have already gone through the same process can make a huge difference.",
     "sobre.valor.p3": "Conecta Sevilla: fewer doubts, more information, and a better experience from day one.",
 
-    // ===== QUEM =====
     "quem.titulo": "Who We Are",
     "quem.sub": "Meet the team behind Conecta Sevilla and our mission.",
     "quem.historia.titulo": "Our History",
@@ -65,18 +61,16 @@ en: {
     "quem.sobre.p2": "Our team believes in the importance of sharing information, experiences, and knowledge to facilitate adaptation to a new reality. We want to build a space where any student can find answers, feel accompanied, and discover everything Seville has to offer.",
     "quem.sobre.p3": "Our mission is to connect cultures, facilitate integration, and help each student enjoy their experience in Spain with greater peace of mind and confidence.",
 
-    // ===== PODCAST =====
     "pod.titulo": "News",
-    "pod.sub": "Soon, the space where we will share news and tips for your life in Seville.",
+    "pod.sub": "The latest news, guides and tips for your life in Seville.",
     "pod.soon": "We're preparing something great!",
     "pod.desc": "Our news blog is under construction. Soon you'll have access to news, guides, and the best tips for your daily life in Seville.",
 
-    // ===== TRAMITES =====
     "tram.titulo": "Procedures in Seville",
     "tram.sub": "Bureaucracy can be complicated, but we are here to simplify it.",
     "tram.antes.titulo": "Before you start: where are you from?",
-   "tram.antes.p1": "Everything changes depending on your nationality. There are three situations:",
-   "tram.antes.l1": "<strong>EU / EEA / Switzerland:</strong> You have freedom of movement. You don't need a visa, but you do need to register if you stay more than 3 months.",
+    "tram.antes.p1": "Everything changes depending on your nationality. There are three situations:",
+    "tram.antes.l1": "<strong>EU / EEA / Switzerland:</strong> You have freedom of movement. You don't need a visa, but you do need to register if you stay more than 3 months.",
     "tram.antes.l2": "<strong>Outside the EU, visa-exempt:</strong> You can enter without a visa for up to 90 days, but to study more than 90 days you need a study stay authorization.",
     "tram.antes.l3": "<strong>Outside the EU, visa required:</strong> You need a visa from day one.",
     "tram.tabela.titulo": "Comparison table",
@@ -110,7 +104,6 @@ en: {
     "tram.ver": "View guide",
     "tram.voltar": "Back to Procedures",
 
-    // ===== VISADOS =====
     "vis.titulo": "Study Visas",
     "vis.sub": "Everything you need to know before traveling to Spain to start your studies.",
     "vis.oque": "Who needs a visa?",
@@ -136,7 +129,6 @@ en: {
     "vis.ees.p1": "From April 10, 2026, the Entry/Exit System (EES) registers photos and fingerprints at borders. ETIAS is not yet operational.",
     "vis.importante.p": "Requirements may vary by consulate. Always check the official website of the Spanish Embassy in your country.",
 
-    // ===== NIE =====
     "nie.titulo": "NIE (Foreigner Identity Number)",
     "nie.sub": "The number that will officially identify you during your stay in Spain.",
     "nie.oque": "What is it and what is it for?",
@@ -149,7 +141,6 @@ en: {
     "nie.cita.p": "The Immigration appointment is free. Book it on the Public Administrations electronic site: choose the province of Seville and the National Police procedure. The fee is only paid to the Administration (form 790), never to intermediaries.",
     "nie.tenha.p": "The NIE is not a physical document, but a number. Keep it safe: it will be requested in almost all procedures of your academic and daily life in Seville.",
 
-    // ===== TIE =====
     "tie.titulo": "TIE (Foreigner Identity Card)",
     "tie.sub": "The physical document that proves your legal residence in Spain.",
     "tie.quem": "Who must apply?",
@@ -170,7 +161,6 @@ en: {
     "tie.diff": "Difference between NIE and TIE",
     "tie.diff.p": "The NIE is just an identification number (which you can have on paper), while the TIE is the physical plastic card with your photo that you carry in your wallet.",
 
-    // ===== EMPADRONAMIENTO =====
     "emp.titulo": "Registration (Empadronamiento)",
     "emp.sub": "The municipal registration that makes you an official resident of Seville.",
     "emp.oque": "What is it and what is it for?",
@@ -188,7 +178,6 @@ en: {
     "emp.manter.4": "<strong>Leaving Seville:</strong> Request cancellation.",
     "emp.aviso": "Request the registration certificate when needed (many entities only accept recent ones). Registering with a fake address can cause legal problems.",
 
-    // ===== MATRICULAS =====
     "mat.titulo": "Academic Enrollments",
     "mat.sub": "Everything about your enrollment in universities and schools in Seville.",
     "mat.acesso": "How do you access based on your origin?",
@@ -211,7 +200,6 @@ en: {
     "mat.docs.2": "Homologation (Ministry of Education): it is a long process, start as soon as possible.",
     "mat.nota.p": "Requirements may change. This guide is indicative: always check official sources.",
 
-    // ===== SEGURIDAD =====
     "seg.titulo": "Safety in Seville",
     "seg.sub": "Practical information and tips so you can enjoy the city with peace and safety.",
     "seg.submenu.1": "Emergency contacts",
@@ -234,12 +222,12 @@ en: {
     "seg.transporte.titulo": "Transport",
     "seg.transporte.p1": "Moving around a new city can be complicated during the first days. That's why knowing Seville's transport options is essential to get around with peace of mind.",
     "seg.transporte.p2": "In this section you will find information about the main means of public transport, how to use them, the available cards, and student discounts. We also share recommendations for planning your trips using mobile applications.",
+    "seg.transporte.btn": "See TUSSAM cards and fares",
     "seg.ambiente.titulo": "Safe environment",
     "seg.ambiente.p1": "Feeling safe also means knowing the environment where you live, study, and share your time with other people.",
     "seg.ambiente.p2": "Seville is a city full of different spaces, neighborhoods, and atmospheres. That's why we want to help you become familiar with the city and offer you recommendations to navigate it with greater confidence in your daily life.",
     "seg.ambiente.p3": "In this section you will find tips on prevention, coexistence, travel, and responsible behavior in public spaces. Our goal is to promote a positive experience, where you can enjoy the city while continuing to take care of yourself and others.",
 
-    // ===== CONTACTO =====
     "cont.titulo": "Contact",
     "cont.sub": "Do you have a question, suggestion, or collaboration proposal? We'd love to hear from you.",
     "cont.email": "Email",
@@ -257,6 +245,27 @@ en: {
     "cont.instagram.p2": "On our Instagram we publish useful tips, news, information of interest and content related to life in Seville.",
     "cont.instagram.p3": "We want this space to be yours, where you can share your experiences, discover new places and meet people who are living an adventure similar to yours.",
     "cont.instagram.btn": "Follow on Instagram",
+
+    // NEWS
+    "news.ler": "Read news",
+    "news.1.titulo": "93% increase in study authorizations",
+    "news.1.desc": "Spain reaffirms itself as an international educational destination with record growth over the last ten years.",
+    "news.2.titulo": "Transport tickets in Seville",
+    "news.2.desc": "TUSSAM and Metro de Sevilla users will be able to keep their current transport tickets.",
+    "news.3.titulo": "Debate on TUSSAM fares",
+    "news.3.desc": "The City Council proposes a fare increase for 2027 that has generated rejection in some sectors.",
+    "news.4.titulo": "US will receive more than 3,000 international students",
+    "news.4.desc": "The University of Seville breaks records for hosting foreign students for the 2026/27 academic year.",
+    "news.5.titulo": "UPO's international center starts the course",
+    "news.5.desc": "More than 260 international students begin their studies at the Pablo de Olavide University campus.",
+    "news.6.titulo": "Rent in Seville, third most expensive in Andalusia",
+    "news.6.desc": "A study by the University of Granada places Seville as one of the cities with the highest rent in the region.",
+    "news.7.titulo": "Uncertainty in the rental market",
+    "news.7.desc": "The rental market situation in Seville causes an estimated drop in housing supply.",
+    "news.8.titulo": "Practical guide for international students",
+    "news.8.desc": "Diario de Sevilla publishes an essential guide for students arriving in the city for the first time.",
+    "news.9.titulo": "How international students have changed Seville",
+    "news.9.desc": "A tour of the cultural and economic impact of foreign students in the Andalusian capital.",
 
     "lang.pt": "Português",
     "lang.es": "Español",
@@ -325,18 +334,18 @@ es: {
     "quem.sobre.p3": "Nuestra misión es conectar culturas, facilitar la integración y ayudar a que cada estudiante disfrute de su experiencia en España con mayor tranquilidad y confianza.",
 
     "pod.titulo": "Noticias",
-    "pod.sub": "Muy pronto, el espacio donde compartiremos noticias y consejos para tu vida en Sevilla.",
+    "pod.sub": "Las últimas novedades, guías y consejos para tu vida en Sevilla.",
     "pod.soon": "¡Estamos preparando algo genial!",
     "pod.desc": "Nuestro blog de noticias está en construcción. Pronto tendrás acceso a novedades, guías y los mejores consejos para tu día a día en Sevilla.",
 
-    // ===== TRAMITES =====
     "tram.titulo": "Trámites en Sevilla",
     "tram.sub": "La burocracia puede ser complicada, pero estamos aquí para simplificarla.",
     "tram.antes.titulo": "Antes de empezar: ¿de dónde eres?",
     "tram.antes.p1": "Todo cambia según tu nacionalidad. Hay tres situaciones:",
-   "tram.antes.l1": "<strong>UE / EEE / Suíça:</strong> Você tem liberdade de circulação. Não precisa de visto, mas precisa se registrar se ficar mais de 3 meses.",
-    "tram.antes.l2": "<strong>Fora da UE, com isenção de visto:</strong> Você pode entrar sem visto por até 90 dias, mas para estudar mais de 90 dias precisa de uma autorização.",
-    "tram.antes.l3": "<strong>Fora da UE, com visto obrigatório:</strong> Você precisa de visto desde o primeiro dia.",
+    "tram.antes.l1": "<strong>UE / EEE / Suiza:</strong> Tienes libertad de circulación. No necesitas visado, pero sí registrarte si te quedas más de 3 meses.",
+    "tram.antes.l2": "<strong>Fuera de la UE, con exención de visado:</strong> Puedes entrar sin visado hasta 90 días, pero para estudiar más de 90 días necesitas una autorización.",
+    "tram.antes.l3": "<strong>Fuera de la UE, con visado obligatorio:</strong> Necesitas visado desde el primer día.",
+    "tram.tabela.titulo": "Cuadro comparativo",
     "tram.tab.col1": "Trámite",
     "tram.tab.col2": "UE / EEE / Suiza",
     "tram.tab.col3": "Fuera de la UE",
@@ -352,7 +361,7 @@ es: {
     "tram.tab.emp": "Empadronamiento",
     "tram.tab.emp.ue": "Obligatorio si vives aquí",
     "tram.tab.emp.fuera": "Obligatorio si vives aquí",
-   "tram.exemplo": "<strong>Exemplo:</strong> Uma estudante brasileira pede a autorização no consulado antes de viajar. Ao chegar, faz o empadronamiento e solicita o TIE em 1 mês. Uma portuguesa apenas se empadrona e registra seu certificado UE.",
+    "tram.exemplo": "<strong>Ejemplo:</strong> Una estudiante brasileña pide la autorización en el consulado antes de viajar. Al llegar, se empadrona y solicita su TIE en 1 mes. Una portuguesa solo se empadrona y registra su certificado UE.",
     "tram.cards.titulo": "Selecciona el trámite que necesitas",
     "tram.visados": "Visados",
     "tram.visados.desc": "Información sobre el visado de estudios.",
@@ -367,7 +376,6 @@ es: {
     "tram.ver": "Ver guía",
     "tram.voltar": "Volver a Trámites",
 
-    // ===== VISADOS =====
     "vis.titulo": "Visados de Estudio",
     "vis.sub": "Todo lo que necesitas saber antes de viajar a España para comenzar tus estudios.",
     "vis.oque": "¿Quién necesita visado?",
@@ -393,7 +401,6 @@ es: {
     "vis.ees.p1": "Desde el 10 de abril de 2026, el Sistema de Entradas y Salidas (EES) registra foto y huellas en las fronteras. El ETIAS aún no está en funcionamiento.",
     "vis.importante.p": "Los requisitos pueden variar según el consulado. Consulta siempre la web oficial de la Embajada de España en tu país.",
 
-    // ===== NIE =====
     "nie.titulo": "NIE (Número de Identidad de Extranjero)",
     "nie.sub": "El número que te identificará oficialmente durante tu estancia en España.",
     "nie.oque": "¿Qué es y para qué sirve?",
@@ -406,7 +413,6 @@ es: {
     "nie.cita.p": "La cita previa de Extranjería es gratuita. Se pide en la sede electrónica de las Administraciones Públicas: elige la provincia de Sevilla y el trámite de Policía Nacional que corresponda. La tasa solo se paga a la Administración (modelo 790), nunca a intermediarios.",
     "nie.tenha.p": "El NIE no es un documento físico, sino un número. Guárdalo bien: te lo pedirán en casi todos los trámites de tu vida académica y diaria en Sevilla.",
 
-    // ===== TIE =====
     "tie.titulo": "TIE (Tarjeta de Identidad de Extranjero)",
     "tie.sub": "El documento físico que acredita tu residencia legal en España.",
     "tie.quem": "¿Quién debe pedirla?",
@@ -427,7 +433,6 @@ es: {
     "tie.diff": "Diferencia entre NIE y TIE",
     "tie.diff.p": "El NIE es solo un número de identificación (puede aparecer en un papel). La TIE es la tarjeta física con tu foto que llevas en la cartera.",
 
-    // ===== EMPADRONAMIENTO =====
     "emp.titulo": "Empadronamiento",
     "emp.sub": "El registro municipal que te convierte en vecino oficial de Sevilla.",
     "emp.oque": "¿Qué es y para qué sirve?",
@@ -445,7 +450,6 @@ es: {
     "emp.manter.4": "<strong>Te vas de Sevilla:</strong> Pide la baja.",
     "emp.aviso": "Pide el certificado o volante de empadronamiento cuando lo necesites (muchas entidades lo aceptan solo si es reciente). Empadronarte con un domicilio falso puede acarrearte problemas legales.",
 
-    // ===== MATRICULAS =====
     "mat.titulo": "Matrículas Académicas",
     "mat.sub": "Todo sobre tu inscripción en universidades y escuelas de Sevilla.",
     "mat.acesso": "¿Cómo accedes según tu origen?",
@@ -468,7 +472,6 @@ es: {
     "mat.docs.2": "Homologación (Ministerio de Educación): es un trámite largo, empieza cuanto antes.",
     "mat.nota.p": "Los requisitos pueden cambiar. Esta guía es orientativa: contrasta siempre con las fuentes oficiales.",
 
-    // ===== SEGURIDAD =====
     "seg.titulo": "Seguridad en Sevilla",
     "seg.sub": "Información práctica y consejos para que disfrutes de la ciudad con tranquilidad y seguridad.",
     "seg.submenu.1": "Contactos de emergencia",
@@ -491,12 +494,12 @@ es: {
     "seg.transporte.titulo": "Transporte",
     "seg.transporte.p1": "Moverse por una ciudad nueva puede resultar complicado durante los primeros días. Por eso, conocer las opciones de transporte de Sevilla es fundamental para desplazarte con tranquilidad.",
     "seg.transporte.p2": "En esta sección encontrarás información sobre los principales medios de transporte público, cómo utilizarlos, las tarjetas disponibles y los descuentos para estudiantes. También compartimos recomendaciones para planificar tus desplazamientos mediante aplicaciones móviles.",
+    "seg.transporte.btn": "Ver tarjetas y tarifas de TUSSAM",
     "seg.ambiente.titulo": "Ambiente seguro",
     "seg.ambiente.p1": "Sentirse seguro también significa conocer el entorno en el que vives, estudias y compartes tu tiempo con otras personas.",
     "seg.ambiente.p2": "Sevilla es una ciudad llena de espacios, barrios y ambientes diferentes. Por eso, queremos ayudarte a familiarizarte con la ciudad y ofrecerte recomendaciones para desenvolverte con mayor confianza en tu día a día.",
     "seg.ambiente.p3": "En este apartado encontrarás consejos sobre prevención, convivencia, desplazamientos y comportamiento responsable en los espacios públicos. Nuestro objetivo es promover una experiencia positiva, en la que puedas disfrutar de la ciudad sin dejar de cuidar de ti y de los demás.",
 
-    // ===== CONTACTO =====
     "cont.titulo": "Contacto",
     "cont.sub": "¿Tienes alguna duda, sugerencia o propuesta de colaboración? Nos encantaría escucharte.",
     "cont.email": "Correo Electrónico",
@@ -514,6 +517,27 @@ es: {
     "cont.instagram.p2": "En nuestro Instagram publicamos consejos útiles, novedades, información de interés y contenidos relacionados con la vida en Sevilla.",
     "cont.instagram.p3": "Queremos que este espacio sea tuyo, donde podrás compartir tus experiencias, descubrir lugares nuevos y conocer a personas que están viviendo una aventura parecida a la tuya.",
     "cont.instagram.btn": "Seguir en Instagram",
+
+    // NEWS
+    "news.ler": "Leer noticia",
+    "news.1.titulo": "Aumento del 93% en autorizaciones de estudios",
+    "news.1.desc": "España se reafirma como destino educativo internacional con un crecimiento récord en los últimos diez años.",
+    "news.2.titulo": "Títulos de transporte en Sevilla",
+    "news.2.desc": "Los usuarios de TUSSAM y Metro de Sevilla podrán mantener sus títulos de transporte actuales.",
+    "news.3.titulo": "Debate sobre las tarifas de TUSSAM",
+    "news.3.desc": "El Ayuntamiento propone una subida de tarifas para 2027 que ha generado rechazo en algunos sectores.",
+    "news.4.titulo": "La US recibirá más de 3.000 estudiantes internacionales",
+    "news.4.desc": "La Universidad de Sevilla bate récords de acogida de alumnos extranjeros para el curso 2026/27.",
+    "news.5.titulo": "El centro internacional de la UPO inicia el curso",
+    "news.5.desc": "Más de 260 estudiantes internacionales comienzan sus estudios en el campus de la Universidad Pablo de Olavide.",
+    "news.6.titulo": "El alquiler en Sevilla, tercero más caro de Andalucía",
+    "news.6.desc": "Un estudio de la Universidad de Granada sitúa a Sevilla como una de las ciudades con el alquiler más alto de la región.",
+    "news.7.titulo": "Incertidumbre en el mercado de alquiler",
+    "news.7.desc": "La situación del mercado de alquiler en Sevilla provoca una caída estimada en la oferta de viviendas.",
+    "news.8.titulo": "Guía práctica para estudiantes internacionales",
+    "news.8.desc": "Diario de Sevilla publica una guía esencial para los estudiantes que llegan a la ciudad por primera vez.",
+    "news.9.titulo": "Cómo los estudiantes internacionales han cambiado Sevilla",
+    "news.9.desc": "Un recorrido por el impacto cultural y económico de los estudiantes extranjeros en la capital hispalense.",
 
     "lang.pt": "Português",
     "lang.es": "Español",
@@ -582,11 +606,10 @@ pt: {
     "quem.sobre.p3": "Nossa missão é conectar culturas, facilitar a integração e ajudar cada estudante a aproveitar sua experiência na Espanha com maior tranquilidade e confiança.",
 
     "pod.titulo": "Notícias",
-    "pod.sub": "Em breve, o espaço onde compartilharemos notícias e dicas para sua vida em Sevilla.",
+    "pod.sub": "As últimas novidades, guias e dicas para a sua vida em Sevilla.",
     "pod.soon": "Estamos preparando algo incrível!",
     "pod.desc": "Nosso blog de notícias está em construção. Em breve você terá acesso a novidades, guias e as melhores dicas para o seu dia a dia em Sevilla.",
 
-    // ===== TRAMITES =====
     "tram.titulo": "Trâmites em Sevilla",
     "tram.sub": "A burocracia pode ser complicada, mas estamos aqui para simplificá-la.",
     "tram.antes.titulo": "Antes de começar: de onde você é?",
@@ -625,7 +648,6 @@ pt: {
     "tram.ver": "Ver guia",
     "tram.voltar": "Voltar aos Trâmites",
 
-    // ===== VISADOS =====
     "vis.titulo": "Vistos de Estudo",
     "vis.sub": "Tudo o que você precisa saber antes de viajar para a Espanha para começar seus estudos.",
     "vis.oque": "Quem precisa de visto?",
@@ -651,7 +673,6 @@ pt: {
     "vis.ees.p1": "Desde 10 de abril de 2026, o Sistema de Entradas e Saídas (EES) registra foto e impressões digitais nas fronteiras. O ETIAS ainda não está em funcionamento.",
     "vis.importante.p": "Os requisitos podem variar de acordo com o consulado. Consulte sempre o site oficial da Embaixada da Espanha no seu país.",
 
-    // ===== NIE =====
     "nie.titulo": "NIE (Número de Identidade de Estrangeiro)",
     "nie.sub": "O número que o identificará oficialmente durante a sua estadia na Espanha.",
     "nie.oque": "O que é e para que serve?",
@@ -664,7 +685,6 @@ pt: {
     "nie.cita.p": "A marcação de hora de Estrangeiros é gratuita. Marque no site eletrônico das Administrações Públicas: escolha a província de Sevilha e o trâmite da Polícia Nacional. A taxa só é paga à Administração (modelo 790), nunca a intermediários.",
     "nie.tenha.p": "O NIE não é um documento físico, mas um número. Guarde-o bem: ele será solicitado em quase todos os trâmites da sua vida acadêmica e diária em Sevilla.",
 
-    // ===== TIE =====
     "tie.titulo": "TIE (Cartão de Identidade de Estrangeiro)",
     "tie.sub": "O documento físico que comprova sua residência legal na Espanha.",
     "tie.quem": "Quem deve solicitar?",
@@ -685,7 +705,6 @@ pt: {
     "tie.diff": "Diferença entre NIE e TIE",
     "tie.diff.p": "O NIE é apenas um número de identificação (que você pode ter em um papel), enquanto o TIE é o cartão físico de plástico com sua foto que você leva na carteira.",
 
-    // ===== EMPADRONAMIENTO =====
     "emp.titulo": "Empadronamiento",
     "emp.sub": "O registro municipal que torna você um residente oficial de Sevilla.",
     "emp.oque": "O que é e para que serve?",
@@ -703,7 +722,6 @@ pt: {
     "emp.manter.4": "<strong>Saindo de Sevilha:</strong> Solicite o cancelamento.",
     "emp.aviso": "Solicite o certificado de empadronamiento quando necessário (muitas entidades só aceitam recentes). Registrar-se com um endereço falso pode causar problemas legais.",
 
-    // ===== MATRICULAS =====
     "mat.titulo": "Matrículas Acadêmicas",
     "mat.sub": "Tudo sobre a sua inscrição em universidades e escolas de Sevilla.",
     "mat.acesso": "Como você acessa de acordo com a sua origem?",
@@ -726,7 +744,6 @@ pt: {
     "mat.docs.2": "Homologação (Ministério da Educação): é um processo longo, comece o quanto antes.",
     "mat.nota.p": "Os requisitos podem mudar. Este guia é orientativo: consulte sempre as fontes oficiais.",
 
-    // ===== SEGURIDAD =====
     "seg.titulo": "Segurança em Sevilla",
     "seg.sub": "Informações práticas e dicas para você aproveitar a cidade com tranquilidade e segurança.",
     "seg.submenu.1": "Contatos de emergência",
@@ -749,12 +766,12 @@ pt: {
     "seg.transporte.titulo": "Transporte",
     "seg.transporte.p1": "Se locomover por uma cidade nova pode ser complicado durante os primeiros dias. Por isso, conhecer as opções de transporte de Sevilla é fundamental para se deslocar com tranquilidade.",
     "seg.transporte.p2": "Nesta seção você encontrará informações sobre os principais meios de transporte público, como utilizá-los, os cartões disponíveis e os descontos para estudantes. Também compartilhamos recomendações para planejar seus deslocamentos por meio de aplicativos móveis.",
+    "seg.transporte.btn": "Ver cartões e tarifas da TUSSAM",
     "seg.ambiente.titulo": "Ambiente seguro",
     "seg.ambiente.p1": "Sentir-se seguro também significa conhecer o ambiente em que você vive, estuda e compartilha seu tempo com outras pessoas.",
     "seg.ambiente.p2": "Sevilla é uma cidade cheia de espaços, bairros e ambientes diferentes. Por isso, queremos ajudar você a se familiarizar com a cidade e oferecer recomendações para se desenvolver com maior confiança no seu dia a dia.",
     "seg.ambiente.p3": "Nesta seção você encontrará dicas sobre prevenção, convivência, deslocamentos e comportamento responsável nos espaços públicos. Nosso objetivo é promover uma experiência positiva, na qual você possa aproveitar a cidade sem deixar de cuidar de si e dos outros.",
 
-    // ===== CONTACTO =====
     "cont.titulo": "Contato",
     "cont.sub": "Tem alguma dúvida, sugestão ou proposta de colaboração? Adoraríamos ouvir você.",
     "cont.email": "E-mail",
@@ -772,6 +789,27 @@ pt: {
     "cont.instagram.p2": "No nosso Instagram publicamos dicas úteis, novidades, informações de interesse e conteúdos relacionados à vida em Sevilla.",
     "cont.instagram.p3": "Queremos que este espaço seja seu, onde você poderá compartilhar suas experiências, descobrir novos lugares e conhecer pessoas que estão vivendo uma aventura parecida com a sua.",
     "cont.instagram.btn": "Seguir no Instagram",
+
+    // NEWS
+    "news.ler": "Ler notícia",
+    "news.1.titulo": "Aumento de 93% nas autorizações de estudos",
+    "news.1.desc": "A Espanha se reafirma como destino educativo internacional com um crescimento recorde nos últimos dez anos.",
+    "news.2.titulo": "Títulos de transporte em Sevilla",
+    "news.2.desc": "Os usuários da TUSSAM e do Metrô de Sevilla poderão manter seus títulos de transporte atuais.",
+    "news.3.titulo": "Debate sobre as tarifas da TUSSAM",
+    "news.3.desc": "A Prefeitura propõe um aumento de tarifas para 2027 que gerou rejeição em alguns setores.",
+    "news.4.titulo": "A US receberá mais de 3.000 estudantes internacionais",
+    "news.4.desc": "A Universidade de Sevilla bate recordes de acolhimento de alunos estrangeiros para o ano letivo 2026/27.",
+    "news.5.titulo": "O centro internacional da UPO inicia o curso",
+    "news.5.desc": "Mais de 260 estudantes internacionais começam seus estudos no campus da Universidade Pablo de Olavide.",
+    "news.6.titulo": "O aluguel em Sevilla, terceiro mais caro da Andaluzia",
+    "news.6.desc": "Um estudo da Universidade de Granada coloca Sevilla como uma das cidades com o aluguel mais alto da região.",
+    "news.7.titulo": "Incerteza no mercado de aluguel",
+    "news.7.desc": "A situação do mercado de aluguel em Sevilla provoca uma queda estimada na oferta de moradias.",
+    "news.8.titulo": "Guia prático para estudantes internacionais",
+    "news.8.desc": "O Diario de Sevilla publica um guia essencial para os estudantes que chegam à cidade pela primeira vez.",
+    "news.9.titulo": "Como os estudantes internacionais mudaram Sevilla",
+    "news.9.desc": "Um passeio pelo impacto cultural e econômico dos estudantes estrangeiros na capital andaluza.",
 
     "lang.pt": "Português",
     "lang.es": "Español",
