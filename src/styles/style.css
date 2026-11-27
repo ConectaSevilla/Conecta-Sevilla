@@ -774,8 +774,8 @@ header {
    ============================================================ */
 .has-submenu {
     position: relative;
-    padding-bottom: 20px; /* Cria a "ponte invisível" para o mouse não cair no vazio */
-    margin-bottom: -20px; /* Compensa o padding para não desalinhar o menu */
+    padding-bottom: 30px; /* Cria a "ponte invisível" para o mouse não cair no vazio */
+    margin-bottom: -30px; /* Compensa o padding para não desalinhar o menu */
 }
 
 /* A caixinha do submenu */
