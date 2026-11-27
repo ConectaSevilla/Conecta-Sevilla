@@ -2,17 +2,17 @@
 <html lang="en">
 <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-EH28HHJZQJ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-EH28HHJZQJ'); 
-</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EH28HHJZQJ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-EH28HHJZQJ'); 
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-i18n="pod.titulo">Noticias - Conecta Sevilla</title>
-    <link rel="stylesheet" href="src/styles/style.css">
+    <link rel="stylesheet" href="src/styles/style.css?v=15">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -25,7 +25,19 @@
                 <li class="nav-item"><a href="index.html" data-i18n="nav.inicio">Inicio</a></li>
                 <li class="nav-item"><a href="podcast.html" class="active" data-i18n="nav.podcast">Noticias</a></li>
                 <li class="nav-item"><a href="tramites.html" data-i18n="nav.tramites">Trámites</a></li>
-                <li class="nav-item"><a href="seguridad.html" data-i18n="nav.seguridad">Seguridad</a></li>
+                
+                <!-- MENU SUSPENSO DE SEGURANÇA -->
+                <li class="nav-item has-submenu">
+                    <a href="seguridad.html" data-i18n="nav.seguridad">Seguridad <i class="fa-solid fa-chevron-down" style="font-size: 10px; margin-left: 3px;"></i></a>
+                    <ul class="submenu-dropdown">
+                        <li><a href="seguridad.html#emergencias" data-i18n="seg.submenu.1">Contactos de emergencia</a></li>
+                        <li><a href="seguridad.html#vida-nocturna" data-i18n="seg.submenu.2">Vida nocturna</a></li>
+                        <li><a href="seguridad.html#estafas" data-i18n="seg.submenu.3">Estafas comunes</a></li>
+                        <li><a href="seguridad.html#transporte" data-i18n="seg.submenu.4">Transporte</a></li>
+                        <li><a href="seguridad.html#ambiente" data-i18n="seg.submenu.5">Ambiente seguro</a></li>
+                    </ul>
+                </li>
+
                 <li class="nav-item"><a href="sobre.html" data-i18n="nav.sobre">Sobre el proyecto</a></li>
                 <li class="nav-item"><a href="quienes.html" data-i18n="nav.quem">Quienes Somos</a></li>
             </ul>
@@ -37,7 +49,19 @@
                 <li class="nav-item"><a href="index.html" data-i18n="nav.inicio">Inicio</a></li>
                 <li class="nav-item"><a href="podcast.html" data-i18n="nav.podcast">Noticias</a></li>
                 <li class="nav-item"><a href="tramites.html" data-i18n="nav.tramites">Trámites</a></li>
-                <li class="nav-item"><a href="seguridad.html" data-i18n="nav.seguridad">Seguridad</a></li>
+                
+                <!-- MENU SUSPENSO NO MOBILE -->
+                <li class="nav-item has-submenu">
+                    <a href="seguridad.html" data-i18n="nav.seguridad">Seguridad <i class="fa-solid fa-chevron-down" style="font-size: 10px; margin-left: 3px;"></i></a>
+                    <ul class="submenu-dropdown">
+                        <li><a href="seguridad.html#emergencias" data-i18n="seg.submenu.1">Contactos de emergencia</a></li>
+                        <li><a href="seguridad.html#vida-nocturna" data-i18n="seg.submenu.2">Vida nocturna</a></li>
+                        <li><a href="seguridad.html#estafas" data-i18n="seg.submenu.3">Estafas comunes</a></li>
+                        <li><a href="seguridad.html#transporte" data-i18n="seg.submenu.4">Transporte</a></li>
+                        <li><a href="seguridad.html#ambiente" data-i18n="seg.submenu.5">Ambiente seguro</a></li>
+                    </ul>
+                </li>
+
                 <li class="nav-item"><a href="sobre.html" data-i18n="nav.sobre">Sobre el proyecto</a></li>
                 <li class="nav-item"><a href="quienes.html" data-i18n="nav.quem">Quienes Somos</a></li>
                 <li class="nav-item"><a href="contacto.html" data-i18n="nav.contacto">Contacto</a></li>
@@ -47,29 +71,103 @@
 
     <section class="pagina-header">
         <div style="margin-bottom: 20px;">
-        <a href="#" onclick="voltarPagina(event)" class="btn-voltar">
-    <i class="fa-solid fa-arrow-left"></i> <span data-i18n="nav.voltar">Voltar</span>
-</a>
+            <a href="#" onclick="voltarPagina(event)" class="btn-voltar">
+                <i class="fa-solid fa-arrow-left"></i> <span data-i18n="nav.voltar">Voltar</span>
+            </a>
         </div>
-        
         <h1 data-i18n="pod.titulo">Noticias</h1>
-        <p data-i18n="pod.sub">Muy pronto, el espacio donde compartiremos historias, consejos y novedades para tu vida en Sevilla.</p>
+        <p data-i18n="pod.sub">Las últimas novedades, guías y consejos para tu vida en Sevilla.</p>
     </section>
 
-    <section class="coming-soon">
-        <!-- Ícone de jornal em vez de microfone -->
-        <div class="icone-grande">
-            <i class="fa-solid fa-newspaper"></i>
+    <section class="pagina-conteudo" style="max-width: 1100px;">
+        <div class="grid-cards">
+            
+            <a href="https://www.inclusion.gob.es/w/las-autorizaciones-de-estancia-por-estudios-aumentan-un-93-en-diez-a%C3%B1os-reafirmando-a-espa%C3%B1a-como-destino-educativo-internacional" target="_blank" class="card-link">
+                <div class="card" style="align-items: flex-start; text-align: left; padding: 30px;">
+                    <i class="fa-solid fa-chart-line icone-card" style="font-size: 30px;"></i>
+                    <h3 data-i18n="news.1.titulo" style="font-size: 20px; margin-bottom: 10px;">Aumento del 93% en autorizaciones de estudios</h3>
+                    <p data-i18n="news.1.desc" style="font-size: 15px;">España se reafirma como destino educativo internacional con un crecimiento récord en los últimos diez años.</p>
+                    <span class="btn-card" style="margin-top: auto;" data-i18n="news.ler">Leer noticia</span>
+                </div>
+            </a>
+
+            <a href="https://www.elcorreoweb.es/sevilla/2026/11/24/tussam-metro-sevilla-podran-mantener-titulos-transporte-136790083.amp.html" target="_blank" class="card-link">
+                <div class="card" style="align-items: flex-start; text-align: left; padding: 30px;">
+                    <i class="fa-solid fa-bus icone-card" style="font-size: 30px;"></i>
+                    <h3 data-i18n="news.2.titulo" style="font-size: 20px; margin-bottom: 10px;">Títulos de transporte en Sevilla</h3>
+                    <p data-i18n="news.2.desc" style="font-size: 15px;">Los usuarios de TUSSAM y Metro de Sevilla podrán mantener sus títulos de transporte actuales.</p>
+                    <span class="btn-card" style="margin-top: auto;" data-i18n="news.ler">Leer noticia</span>
+                </div>
+            </a>
+
+            <a href="https://lavozdesevilla.es/podemos-sevilla-rechaza-subida-tarifas-tussam-2027/" target="_blank" class="card-link">
+                <div class="card" style="align-items: flex-start; text-align: left; padding: 30px;">
+                    <i class="fa-solid fa-ticket icone-card" style="font-size: 30px;"></i>
+                    <h3 data-i18n="news.3.titulo" style="font-size: 20px; margin-bottom: 10px;">Debate sobre las tarifas de TUSSAM</h3>
+                    <p data-i18n="news.3.desc" style="font-size: 15px;">El Ayuntamiento propone una subida de tarifas para 2027 que ha generado rechazo en algunos sectores.</p>
+                    <span class="btn-card" style="margin-top: auto;" data-i18n="news.ler">Leer noticia</span>
+                </div>
+            </a>
+
+            <a href="https://www.us.es/actualidad-de-la-us/la-us-recibira-mas-de-3000-estudiantes-internacionales-en-el-curso-202627" target="_blank" class="card-link">
+                <div class="card" style="align-items: flex-start; text-align: left; padding: 30px;">
+                    <i class="fa-solid fa-graduation-cap icone-card" style="font-size: 30px;"></i>
+                    <h3 data-i18n="news.4.titulo" style="font-size: 20px; margin-bottom: 10px;">La US recibirá más de 3.000 estudiantes internacionales</h3>
+                    <p data-i18n="news.4.desc" style="font-size: 15px;">La Universidad de Sevilla bate récords de acogida de alumnos extranjeros para el curso 2026/27.</p>
+                    <span class="btn-card" style="margin-top: auto;" data-i18n="news.ler">Leer noticia</span>
+                </div>
+            </a>
+
+            <a href="https://www.upo.es/diario/comunidad/2026/09/el-centro-universitario-internacional-de-la-upo-inicia-el-curso-con-mas-de-260-estudiantes/" target="_blank" class="card-link">
+                <div class="card" style="align-items: flex-start; text-align: left; padding: 30px;">
+                    <i class="fa-solid fa-building-columns icone-card" style="font-size: 30px;"></i>
+                    <h3 data-i18n="news.5.titulo" style="font-size: 20px; margin-bottom: 10px;">El centro internacional de la UPO inicia el curso</h3>
+                    <p data-i18n="news.5.desc" style="font-size: 15px;">Más de 260 estudiantes internacionales comienzan sus estudios en el campus de la Universidad Pablo de Olavide.</p>
+                    <span class="btn-card" style="margin-top: auto;" data-i18n="news.ler">Leer noticia</span>
+                </div>
+            </a>
+
+            <a href="https://sevillasecreta.co/alquiler-sevilla-tercero-mas-caro-andalucia-estudio-universidad-de-granada/" target="_blank" class="card-link">
+                <div class="card" style="align-items: flex-start; text-align: left; padding: 30px;">
+                    <i class="fa-solid fa-house-chimney-window icone-card" style="font-size: 30px;"></i>
+                    <h3 data-i18n="news.6.titulo" style="font-size: 20px; margin-bottom: 10px;">El alquiler en Sevilla, tercero más caro de Andalucía</h3>
+                    <p data-i18n="news.6.desc" style="font-size: 15px;">Un estudio de la Universidad de Granada sitúa a Sevilla como una de las ciudades con el alquiler más alto de la región.</p>
+                    <span class="btn-card" style="margin-top: auto;" data-i18n="news.ler">Leer noticia</span>
+                </div>
+            </a>
+
+            <a href="https://www.abc.es/sevilla/ciudad/incertidumbre-mercado-alquiler-sevilla-provoca-caida-estimada-20261117070820-nts_amp.html" target="_blank" class="card-link">
+                <div class="card" style="align-items: flex-start; text-align: left; padding: 30px;">
+                    <i class="fa-solid fa-arrow-trend-down icone-card" style="font-size: 30px;"></i>
+                    <h3 data-i18n="news.7.titulo" style="font-size: 20px; margin-bottom: 10px;">Incertidumbre en el mercado de alquiler</h3>
+                    <p data-i18n="news.7.desc" style="font-size: 15px;">La situación del mercado de alquiler en Sevilla provoca una caída estimada en la oferta de viviendas.</p>
+                    <span class="btn-card" style="margin-top: auto;" data-i18n="news.ler">Leer noticia</span>
+                </div>
+            </a>
+
+            <a href="https://www.diariodesevilla.es/bc-sevilla/estudiantes-internacionales-sevilla-guia-practica_0_2008533184.amp.html" target="_blank" class="card-link">
+                <div class="card" style="align-items: flex-start; text-align: left; padding: 30px;">
+                    <i class="fa-solid fa-map-location-dot icone-card" style="font-size: 30px;"></i>
+                    <h3 data-i18n="news.8.titulo" style="font-size: 20px; margin-bottom: 10px;">Guía práctica para estudiantes internacionales</h3>
+                    <p data-i18n="news.8.desc" style="font-size: 15px;">Diario de Sevilla publica una guía esencial para los estudiantes que llegan a la ciudad por primera vez.</p>
+                    <span class="btn-card" style="margin-top: auto;" data-i18n="news.ler">Leer noticia</span>
+                </div>
+            </a>
+
+            <a href="https://www.diariodesevilla.es/bc-sevilla/estudiantes-internacionales-sevilla-cambiado-vida_0_2005804651.amp.html" target="_blank" class="card-link">
+                <div class="card" style="align-items: flex-start; text-align: left; padding: 30px;">
+                    <i class="fa-solid fa-heart icone-card" style="font-size: 30px;"></i>
+                    <h3 data-i18n="news.9.titulo" style="font-size: 20px; margin-bottom: 10px;">Cómo los estudiantes internacionales han cambiado Sevilla</h3>
+                    <p data-i18n="news.9.desc" style="font-size: 15px;">Un recorrido por el impacto cultural y económico de los estudiantes extranjeros en la capital hispalense.</p>
+                    <span class="btn-card" style="margin-top: auto;" data-i18n="news.ler">Leer noticia</span>
+                </div>
+            </a>
+
         </div>
-        
-        <h2 data-i18n="pod.soon">¡Estamos preparando algo genial!</h2>
-        <p data-i18n="pod.desc">Nuestro blog de noticias está en construcción. Pronto tendrás acceso a novedades, guías y los mejores consejos para tu día a día en Sevilla.</p>
-        
-        <!-- Os botões do YouTube, Spotify e Instagram foram removidos -->
     </section>
 
     <button id="btn-topo" aria-label="Voltar ao início"><i class="fa-solid fa-arrow-up"></i></button>
-    <script src="src/javascript/traducoes.js?v=5"></script>
-    <script src="src/javascript/script.js?v=5"></script>
+    <script src="src/javascript/traducoes.js?v=15"></script>
+    <script src="src/javascript/script.js?v=15"></script>
 </body>
 </html>
